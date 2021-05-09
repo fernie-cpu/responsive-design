@@ -109,6 +109,11 @@
     .navGrid-group {
         padding: 0 1.5rem;
     }
+    
+    .navGrid-group:not(:first-child) {
+        border-color: #505666;
+        border-left: 1px solid rgba(80, 86, 102, 0.5)
+    }
 
     .navGrid-row {
         margin: 0;
@@ -124,6 +129,10 @@
         flex-basis: 10rem;
     }
 
+    .navGrid-item:not(:first-child) {
+        margin-left: 1.5rem;
+    }
+
     .navGrid-image {
         flex: none;
         width: 100%;
@@ -132,11 +141,6 @@
 
     .navGrid-text {
         flex: none;
-    }
-
-    .navGrid-group:not(:first-child) {
-        border-color: #505666;
-        border-left: 1px solid rgba(80, 86, 102, 0.5)
     }
 }
 
