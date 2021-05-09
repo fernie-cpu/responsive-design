@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
 @import url('font.css');
-@import url('media.css');
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -16,17 +15,45 @@
     border: 0 solid;
 }
 
+:root {
+    --bg-opacity: 1;
+    --text-opacity: 1;
+}
+
 body {
     visibility: visible !important;    
 }
 
 body, button, input, textarea {
     color: #505666;
-    --text-opacity: 1;
     color: rgba(80, 86, 102, var(--text-opacity));
     font-family: 'Graphik', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
+}
+
+a,
+a:hover {
+    color: rgba(0, 0, 0, var(--text-opacity));
+}
+
+h5 {
+    font-family: 'Graphik', sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+h6 {
+    font-family: 'Shentox', sans-serif;
+    letter-spacing: .08em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+img, svg {
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
 
 .main-nav {
@@ -34,7 +61,6 @@ body, button, input, textarea {
     position: absolute;
     top: 0;
     z-index: 50;
-    --bg-opacity: 1;
     background-color: #fff;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
     box-shadow: 0 0 48px rgba(0, 0, 0, .15);
@@ -57,7 +83,6 @@ body, button, input, textarea {
 .logo-link svg {
     height: 1rem;
     fill: currentColor;
-    --text-opacity: 1;
     color: #000;
     color: rgba(0, 0, 0, var(--text-opacity));
     transition: fill .25s ease;
@@ -70,4 +95,166 @@ body, button, input, textarea {
 
 .logo-link svg:hover path {
     fill: #c09;
+}
+
+.nav-menuItem:not(.has-grid, .has-menu) .nav-menuLink {
+    cursor: pointer;
+}
+
+.nav-menuLink {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 1.5rem;
+    color: #a7aab2;
+    color: rgba(167, 170, 178, var(--text-opacity));
+    cursor: default;
+}
+
+.nav-menuLink:first-child {
+    display: block !important;
+}
+
+.nav-menuItem:hover .nav-menuLink {
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.has-grid > .nav-menuLink::after,
+.has-menu > .nav-menuLink::after {
+    position: relative;
+    pointer-events: none;
+    float: right;
+    margin-left: .5rem;
+    height: .75rem;
+    width: .75rem;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMiAxMic+PHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjQTdBQUIyJyBkPSdNMTEuNSAzLjVMNiA5IC41IDMuNScvPjwvc3ZnPg==);
+    content: "";
+    top: 14px;
+}
+
+.has-grid > .nav-menuLink::before {
+    display: none;
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 50%;
+    border-left: 6px solid transparent;
+    border-bottom-color: transparent;
+    border-right: 6px solid transparent;
+    border-top-color: transparent;
+    -webkit-animation: navMenuLinkTail .15s ease-out both;
+    animation: navMenuLinkTail .15s ease-out both;
+    border-bottom: 6px solid #000;
+    bottom: -6px;
+    content: "";
+    margin-left: -6px;
+}
+
+.nav-grid {
+    display: none;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, var(--bg-opacity));
+}
+
+.nav-grid > * {
+    animation: navGridContent .3s ease-out .1s both;
+    -webkit-animation: navGridContent .3s ease-out .1s both;
+}
+
+.navGrid-group {
+    padding: 5rem 1.5rem 0;
+}
+
+.navGrid-group h6 {
+    margin-bottom: 1rem;
+    color: #a7aab2;
+    color: rgba(167, 170, 178, var(--text-opacity));
+}
+
+.navGrid-groupHeading {
+    font-size: .875rem;
+}
+
+.navGrid-row {
+    display: flex;
+}
+
+.navGrid-item {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.navGrid-image {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .5);
+    flex-basis: calc(50% - 8px);
+    width: calc(50% - 8px);
+}
+
+.lazy {
+    transition: opacity .2s cubic-bezier(0, 0, .2, 1);
+}
+
+.is-loaded {
+    opacity: 1;
+}
+
+.navGrid-text {
+    flex: 0 0 calc(50% - 8px);
+}
+
+.navGrid-itemHeading {
+    margin-bottom: .25rem;
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.navGrid-itemDesc {
+    font-size: .75rem;
+    color: #a7aab2;
+    color: rgba(167, 170, 178, var(--text-opacity));
+    transition: .25s ease;
+}
+
+.navGrid-item:hover .navGrid-itemDesc {
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity))
+}
+
+@-webkit-keyframes navMenuLinkTail {
+    0% {transform:translateY(0)}
+    to {transform:translateY(-6px)}
+}
+
+@keyframes navMenuLinkTail {
+    0% {transform:translateY(0)}
+    to {transform:translateY(-6px)}
+}
+
+@-webkit-keyframes navGrid{ 
+    0% {transform:scaleY(0)}
+    to {transform:scaleY(1)}
+}
+
+@keyframes navGrid {
+    0% {transform:scaleY(0)}
+    to {transform:scaleY(1)}
+}
+
+@-webkit-keyframes navGridContent {
+    0%{opacity:0;transform:translateY(-12px)}
+    to {opacity:1;transform:translateY(0)}
+}
+
+@keyframes navGridContent {
+    0%{opacity:0;transform:translateY(-12px)}
+    to {opacity:1;transform:translateY(0)}
 }

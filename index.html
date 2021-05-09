@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="shortcut icon" href="assets/img/favicon/favicon-16x16.webp" type="image/x-icon">
     <title>TNW | The heart of tech</title>
 </head>
@@ -19,7 +20,36 @@
                     </svg>
                 </a>
             </h1>
-            <div class="nav-menuContainer"></div>
+            <div class="nav-menuContainer">
+                <ul class="nav-menu">
+                    <li class="nav-menuItem">
+                        <a href="#" class="nav-menuLink">Home</a>
+                    </li>
+                    <li class="nav-menuItem has-grid">
+                        <a class="nav-menuLink">News</a>
+                        <div class="nav-grid">
+                            <div class="navGrid">
+                                <div class="navGrid-group">
+                                    <h6 class="navGrid-groupHeading">General</h6>
+                                    <div class="navGrid-row">
+                                        <a href="#" class="navGrid-item">
+                                            <img src="assets/img/news-menu/latest.webp" class="navGrid-image lazy is-loaded" alt="latest" width="160" height="90">
+                                            <div class="navGrid-text">
+                                                <h5 class="navGrid-itemHeading">Latest</h5>
+                                                <p class="navGrid-itemDesc">The Latest tech news</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-menuItem has-menu"></li>
+                    <li class="nav-menuItem"></li>
+                    <li class="nav-menuItem"></li>
+                    <li class="nav-menuItem has-menu"></li>
+                </ul>
+            </div>
         </header>
     </nav>
 </body>
