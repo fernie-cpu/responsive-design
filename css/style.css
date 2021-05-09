@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+@import url('font.css');
+@import url('media.css');
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0 solid;
+}
+
+body {
+    visibility: visible !important;    
+}
+
+body, button, input, textarea {
+    color: #505666;
+    --text-opacity: 1;
+    color: rgba(80, 86, 102, var(--text-opacity));
+    font-family: 'Graphik', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.main-nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    box-shadow: 0 0 48px rgba(0, 0, 0, .15);
+}
+
+.logo a.logo-link {
+    position: absolute;
+}
+
+.logo-link {
+    position: absolute;
+    display: none;
+    height: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    left: 1.5rem;
+    width: 4.125rem;
+}
+
+.logo-link svg {
+    height: 1rem;
+    fill: currentColor;
+    --text-opacity: 1;
+    color: #000;
+    color: rgba(0, 0, 0, var(--text-opacity));
+    transition: fill .25s ease;
+}
+
+.logo-link svg path {
+    transition: fill .5s ease-in-out;
+    fill: #000;
+}
+
+.logo-link svg:hover path {
+    fill: #c09;
+}

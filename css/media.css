@@ -1,0 +1,26 @@
+@media (min-width: 1024px) {
+    .main-nav .nav-1 {
+        --bg-opacity: 1;
+        background-color: rgba(247, 248, 248, var(--bg-opacity));
+        background-color: #f7f8f8;
+        position: relative;
+        height: 3rem;
+    }
+
+    .nav-menuContainer {
+        z-index: 100;
+    }
+
+    .logo-link {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        display: flex;
+        left: 0;
+        position: absolute;
+        width: 3em;
+    }
+}
