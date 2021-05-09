@@ -85,6 +85,17 @@
         display: block;
     }
 
+    .nav-grid::after {
+        display: block;
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+        width: 5rem;
+        background-image: linear-gradient(90deg, transparent, #000);
+        content: "";
+    }
+
     .nav-grid {
         -webkit-animation: navGrid .15s ease-out both;
         animation: navGrid .15s ease-out both;
