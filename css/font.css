@@ -37,3 +37,11 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'TNW Avalon';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn4.tnwcdn.com/assets/fonts/tnw-avalon/tnw-avalon-bold.woff') format('woff'),
+         url('https://cdn4.tnwcdn.com/assets/fonts/tnw-avalon/tnw-avalon-bold.woff2') format('woff2');
+}
