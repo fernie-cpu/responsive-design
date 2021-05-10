@@ -4,6 +4,13 @@
     --border-opacity: 0.5;
 }
 
+@media (min-width: 375px) {
+    .nav-socialItem {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+}
+
 @media (min-width: 768px) {
     .nav-menuLink {
         padding: 1rem 3rem;
@@ -219,6 +226,10 @@
 
     .nav-icons {
         right: 0;
+    }
+
+    .nav-footer {
+        display: none;
     }
 }
 

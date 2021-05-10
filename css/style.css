@@ -282,6 +282,64 @@ img, svg {
     width: 20px;
 }
 
+.nav-footer {
+    z-index: 100;
+    padding: 1.5rem 3rem;
+    background-color: #1c1c24;
+    background-color: rgba(38, 30, 36, var(--bg-opacity));
+    color: #fff;
+    color:rgba(255, 255, 255, var(--text-opacity));
+    box-shadow: 0 0 40px #000;
+}
+
+.nav-social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+
+.nav-socialItem {
+    margin: 0 .25rem;
+}
+
+.nav-socialLink {
+    display: block;
+    padding: .75rem;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, var(--bg-opacity));
+    border-radius: 50%;
+    height: 2.75rem;
+    width: 2.75rem;
+}
+
+.nav-socialIcon {
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+    fill: currentColor;
+    height: 20px;
+    width: 20px;
+}
+
+.nav-company {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-companyLink {
+    display: block;
+    padding: .5rem;
+    font-size: .875rem;
+    white-space: nowrap;
+    color: #a7aab2;
+    color: rgba(167, 170, 178, var(--text-opacity));
+    transition: .25s ease-out;
+}
+
+.nav-companyLink:hover {
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+}
+
 @-webkit-keyframes navMenuLinkTail {
     0% {transform:translateY(0)}
     to {transform:translateY(-6px)}
