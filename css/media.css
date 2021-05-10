@@ -12,6 +12,10 @@
 }
 
 @media (min-width: 768px) {
+    h1, h2 {
+        font-size: 3rem;
+    }
+    
     .nav-menuLink {
         padding: 1rem 3rem;
     }
@@ -19,13 +23,23 @@
     .navGrid-group {
         padding: 5rem 3rem 0;
     }
-
+    
     .navGrid-row {
         margin: 0 .75rem;
     }
 
     .nav-submenuLink {
         padding-left: 5rem;
+    }
+    
+    .nextHomeHeaderGrid.homeLead {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    .wrapper {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
 
@@ -39,6 +53,15 @@
 }
 
 @media (min-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .main-nav {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+
     .main-nav .nav-1 {
         background-color: rgba(247, 248, 248, var(--bg-opacity));
         background-color: #f7f8f8;
@@ -230,6 +253,55 @@
 
     .nav-footer {
         display: none;
+    }
+
+    .page {
+        padding: 0;
+    }
+
+    .showcase {
+        padding: 6rem 0;
+    }
+
+    .wrapper {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .nextHomeHeaderGrid .nxtHome {
+        display: flex;
+        align-items: center;
+        padding: 2% 0;
+    }
+
+    .nextHomeHeaderGrid .nxtHome header {
+        width: 80%;
+    }
+
+    .showcase-header .homepage {
+        max-width: 25%;
+        height: auto;
+        margin: 0 0 0 5%;
+        padding: 1em 0;
+    }
+
+    .nextHomeHeaderGrid .mob-tagline {
+        display: none;
+    }
+
+    .nextHome .sectionHeader--center h1 {
+        display: none;
+    }
+
+    .brandIntro-text {
+        margin-bottom: 2rem;
+        font-size: 32px;
+    }
+
+    .nextHomeHeaderGrid .nxtHome .brandIntro-text {
+        display: block;
+        width: 25%;
+        margin-top: 3%;
     }
 }
 

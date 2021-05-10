@@ -37,6 +37,19 @@ a:hover {
     color: rgba(0, 0, 0, var(--text-opacity));
 }
 
+h1, h2 {
+    font-family: 'TNW Avalon', sans-serif;
+    letter-spacing: -.025rem;
+    line-height: 1.15;
+    color: #000;
+    color: rgba(0, 0, 0, var(--text-opacity));
+    font-size: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
 h5 {
     font-family: 'Graphik', sans-serif;
     font-weight: 500;
@@ -338,6 +351,89 @@ img, svg {
 .nav-companyLink:hover {
     color: #fff;
     color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.tnw-ad {
+    height: 0;
+    display: none;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 3.5rem;
+    transition: .25s ease-out;
+}
+
+.page-main {
+    flex: 1 1 0%;
+}
+
+.nextHome {
+    background: #fff;
+}
+
+.showcase {
+    padding: 2rem 0;
+}
+
+.nextHomeHeaderGrid.homeLead {
+    padding: 2em 0 0;
+    margin: 0;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 80rem;
+    position: relative;
+}
+
+.showcase-header {
+    margin-bottom: 2rem;
+}
+
+.showcase-header .homepage {
+    height: 50%;
+    width: 50%;
+    margin: 0 auto 1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.nextHomeHeaderGrid .mob-tagline {
+    display: block;
+    font-size: 18px !important;
+}
+
+.nextHome .sectionHeader--center h1 {
+    color: rgba(80, 86, 102, var(--text-opacity));
+    font: inherit;
+    display: block;
+}
+
+.brandIntro-text {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+.nextHomeHeaderGrid .brandIntro-text {
+    display: none;
+}
+
+.brandIntro-text h1 {
+    color: rgba(80, 86, 102, var(--text-opacity));
+    font: inherit;
+    text-align: center;
+}
+
+.wrapper--wide {
+    max-width: 100rem;
 }
 
 @-webkit-keyframes navMenuLinkTail {
