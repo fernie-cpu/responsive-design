@@ -255,6 +255,33 @@ img, svg {
     --text-opacity: 0.5;
 }
 
+.nav-icons {
+    position: absolute;
+    display: flex;
+    z-index: 90;
+    top: 0;
+    right: 3rem;
+    line-height: 3.5;
+}
+
+.nav-iconsLink {
+    margin-right: .5em;
+}
+
+.button-icon {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    color: #505666;
+    color: rgba(80, 86, 102, var(--text-opacity));
+    --text-opacity: 0.25;
+    fill: currentColor;
+    height: 20px;
+    margin-right: 19px;
+    top: 14px;
+    width: 20px;
+}
+
 @-webkit-keyframes navMenuLinkTail {
     0% {transform:translateY(0)}
     to {transform:translateY(-6px)}
