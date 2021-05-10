@@ -1,7 +1,7 @@
 :root {
     --bg-opacity: 1;
     --text-opacity: 1;
-    --border-opacity: 1;
+    --border-opacity: 0.5;
 }
 
 @media (min-width: 768px) {
@@ -15,6 +15,10 @@
 
     .navGrid-row {
         margin: 0 .75rem;
+    }
+
+    .nav-submenuLink {
+        padding-left: 5rem;
     }
 }
 
@@ -152,6 +156,65 @@
 
     .navGrid-text {
         flex: none;
+    }
+
+    .nav-menuItem.has-menu {
+        position: relative;
+    }
+
+    .nav-menuItem.has-menu:hover .nav-submenu {
+        display: block;
+    }
+
+    .nav-submenu {
+        position: absolute;
+        z-index: 50;
+        margin-left: -7rem;
+        left: 50%;
+        line-height: 1.5;
+        text-align: center;
+        width: 224px;
+        -webkit-animation: navSubmenu .15s ease-out both;
+        animation: navSubmenu .15s ease-out both;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, .15);
+    }
+
+    .nav-submenu::before {
+        animation: navSubmenuTail .15s ease-out both;
+        -webkit-animation: navSubmenuTail .15s ease-out both;
+        position: absolute;
+        height: 0;
+        width: 0;
+        left: 50%;
+        border: 6px solid transparent;
+        border-top: 0;
+        border-bottom-color: #000;
+        content: "";
+        margin: -6px 0 0 -6px;
+    }
+
+    .nav-submenuItem:not(:first-child) {
+        border-color: #505666;
+        border-top: 1px solid rgba(80, 86, 102, var(--border-opacity));
+    }
+
+    .nav-submenuLink {
+        padding: 1rem;
+    }
+
+    .nav-submenuLink:hover {
+        background-color: #505666;
+        background-color: rgba(80, 86, 102, var(--bg-opacity)); 
+    }
+
+    .nav-submenuLinkTitle {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .nav-submenuLinkNote {
+        font-size: .75rem;
+        --text-opacity: 0.75;
     }
 }
 
