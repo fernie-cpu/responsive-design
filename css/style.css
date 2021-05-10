@@ -37,6 +37,10 @@ a:hover {
     color: rgba(0, 0, 0, var(--text-opacity));
 }
 
+h1 {
+    margin-bottom: 1rem;
+}
+
 h1, h2 {
     font-family: 'TNW Avalon', sans-serif;
     letter-spacing: -.025rem;
@@ -46,8 +50,13 @@ h1, h2 {
     font-size: 2rem;
 }
 
-h1 {
-    margin-bottom: 1rem;
+h3, h4 {
+    color: #000;
+    color: rgba(0, 0, 0, var(--text-opacity));
+}
+
+h3, h4 {
+    line-height: 1.5;
 }
 
 h5 {
@@ -444,6 +453,207 @@ img, svg {
 
 .showcase-grid {
     display: flex;
+}
+
+.nextHomeHeaderGrid .showcase-grid .showcase-grid {
+    display: flex;
+}
+
+.showcase-article .card {
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+}
+
+.card--visual {
+    box-shadow: none;
+}
+
+.media {
+    display: block;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-top: 100%;
+}
+
+.media>* {
+    position: absolute;
+    background-size: cover;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-position: 50% 50%;
+    object-position: 50% 50%;
+}
+
+.parallax-layer {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-position: bottom;
+    background-size: cover;
+    object-fit: cover;
+    height: 100%;
+    max-width: none;
+    width: 125%;
+}
+
+.card-image {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, var(--bg-opacity));
+    transform: translateZ(0);
+}
+
+.card-imageImage {
+    transition: transform .5s cubic-bezier(0, 0, .2, 1);
+    transform: scale(1.03);
+}
+
+.card:hover .card-imageImage {
+    transform: scale(1.01);
+}
+
+.card--visual .card-image::after {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background-image: linear-gradient(180deg, transparent 25%, #000 90%);
+    content: "";
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 0, .2, 1);
+}
+
+.card--visual .card-header {
+    position: absolute;
+    bottom: 0;
+}
+
+.card-dark .card-header,
+.card--visual .card-header {
+    background: transparent;
+    color: #fff;
+    color:rgba(255, 255, 255, var(--text-opacity));
+}
+
+.nextHomeHeaderGrid .card-header {
+    padding: 24px;
+}
+
+.card-header {
+    padding: 1rem;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
+.card-label {
+    margin-bottom: .25rem;
+    font-size: .75rem;
+}
+
+.card-heading {
+    font-size: 1.5rem;
+    margin-bottom: .25rem;
+}
+
+h1.card-heading, h2, h3.card-heading {
+    font-family: 'TNW Avalon', sans-serif;
+    font-weight: 500;
+    letter-spacing: -.025rem;
+    line-height: 1;
+    text-transform: none;
+    font-size: 2.5rem;
+}
+
+.showcase-article .card-heading {
+    margin-bottom: .25rem;
+    text-align: left;
+    font-size: 1.25em;
+    letter-spacing: -.2px;
+}
+
+.card-heading a {
+    color: #000;
+    color: rgba(0, 0, 0, var(--text-opacity));
+}
+
+.card--dark .card .meta-link:hover,
+.card--dark .card-heading a,
+.card--visual .card .meta-link:hover,
+.card--visual .card-heading a,
+.footer {
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.nextHomeHeaderGrid .showcase-article .advertPane {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nextHomeHeaderGrid .adpanel {
+    color: #fff !important;
+}
+
+.showcase-article .card-heading.adpanel {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 3rem;
+    padding: 0 1.5rem;
+    vertical-align: middle;
+    font-weight: 500;
+    color: #505666;
+    color: rgba(80, 86, 102, var(--text-opacity));
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-style: none;
+    border-radius: .25rem;
+    background-color: transparent;
+    transition-duration: .1s;
+    font-variant-ligatures: none;
+    box-shadow: inset 0 0 0 1px rgba(80, 86, 102, .25);
+    font-size: 13px; 
+    letter-spacing: .025em;
+    line-height: 48px;
+}
+
+.button--rounded {
+    border-radius: 1.5rem;
+}
+
+.nextHomeHeaderGrid .showcase-article .button.adpanel {
+    margin-top: 1em;
+    box-shadow: inset 0 0 0 1px #fff;
 }
 
 @-webkit-keyframes navMenuLinkTail {
