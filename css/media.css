@@ -41,6 +41,17 @@
         padding-left: 4rem;
         padding-right: 4rem;
     }
+
+    .nextHomeHeaderGrid .showcase-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-grid {
+        margin: 0;
+        display: grid;
+        grid-gap: .5rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -302,6 +313,12 @@
         display: block;
         width: 25%;
         margin-top: 3%;
+    }
+
+    .nextHomeHeaderGrid .showcase-grid {
+        grid-gap: .5rem;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(4, 144px);
     }
 }
 

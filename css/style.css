@@ -436,6 +436,16 @@ img, svg {
     max-width: 100rem;
 }
 
+.nextHomeHeaderGrid .showcase-grid {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 192px);
+}
+
+.showcase-grid {
+    display: flex;
+}
+
 @-webkit-keyframes navMenuLinkTail {
     0% {transform:translateY(0)}
     to {transform:translateY(-6px)}
