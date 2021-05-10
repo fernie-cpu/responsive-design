@@ -45,3 +45,10 @@
     src: url('https://cdn4.tnwcdn.com/assets/fonts/tnw-avalon/tnw-avalon-bold.woff') format('woff'),
          url('https://cdn4.tnwcdn.com/assets/fonts/tnw-avalon/tnw-avalon-bold.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: 'TNW Avalon';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/Avalon-Font-Family/Avalon_Bold.ttf') format('truetype');
+}
