@@ -143,10 +143,6 @@
         font-size: 1.5rem;
     }
 
-    .button {
-        padding: 0 1.5rem;
-    }
-
     .nextHomeHeaderGrid .showcase-article:nth-child(4) {
         grid-column: 1;
         grid-row: 4;
@@ -218,6 +214,14 @@
 
     .md\:text-s {
         font-size: .875rem;
+    }
+
+    .md\:justify-center {
+        justify-content: center;
+    }
+
+    .md\:mt-2xl {
+        margin-top: 3.5rem;
     }
 }
 
