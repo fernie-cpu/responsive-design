@@ -44,7 +44,7 @@ h1 {
 
 h1, h2 {
     font-family: 'TNW Avalon', sans-serif;
-    letter-spacing: -.025rem;
+    letter-spacing: -.025em;
     line-height: 1.15;
     color: #000;
     color: rgba(0, 0, 0, var(--text-opacity));
@@ -765,6 +765,86 @@ h1.card-heading, h2, h3.card-heading {
 
 .showcaseTrending .showcase-grid li.articleGridTrendingListItem a span.trendingTitle:hover {
     box-shadow: 0 2px 0 rgba(204, 0, 153, .33);
+}
+
+.c-bodyBlock {
+    padding: 4rem 0;
+}
+
+.m-none {
+    margin: 0;
+}
+
+.grid--gap-l {
+    margin: -.75rem;
+}
+
+.grid-col {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    border: 0 solid transparent;
+}
+
+.grid--gap-l > .grid-col {
+    border-width: .75rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.mr-sm {
+    margin-right: .75rem;
+}
+
+.flex-basis-1\/4 {
+    flex-basis: 25%;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+.text-s {
+    font-size: .875rem;
+}
+
+.leading-snug {
+    line-height: 1.3;
+}
+
+.text-xs {
+    font-size: .75rem;
+}
+
+.pt-xs {
+    padding-top: .25rem;
+}
+
+.text-copy-light {
+    color: #a7aab2;
+    color: rgba(167, 170, 178, var(--text-opacity));
+}
+
+.transition {
+    transition-property: backround-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+
+.ease-out {
+    transition-timing-function: cubic-bezier(0, 0, .2, 1);
+}
+
+.duration-150 {
+    transition-duration: .15s;
+}
+
+.hover\:shadow-0-2-0-brand-pink-25:hover {
+    box-shadow: 0 2px 0 rgba(204, 0, 153, .25);
 }
 
 @-webkit-keyframes navMenuLinkTail {

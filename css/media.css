@@ -15,6 +15,30 @@
         margin-left: .5rem;
         margin-right: .5rem;
     }
+
+    .sm\:grid--gap-xl {
+        margin: -1rem;
+    }
+
+    .sm\:grid--gap-xl > .grid-col {
+        border-width: 1rem;
+    }
+
+    .sm\:mr-l {
+        margin-right: 1.5rem;
+    }
+
+    .sm\:flex-basis-1\/4 {
+        flex-basis: 25%;
+    }
+
+    .sm\:text-m {
+        font-size: 1rem;
+    }
+
+    .sm\:leading-normal {
+        line-height: 1.5;
+    }
 }
 
 @media (min-width: 768px) {
@@ -161,6 +185,39 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 192px);
+    }
+
+    .c-bodyBlock {
+        padding: 7rem 0;
+    }
+
+    .md\:grid-col--1\/2 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .md\:flex-col {
+        flex-direction: column;
+    }
+
+    .md\:m-none {
+        margin: 0;
+    }
+
+    .md\:rounded-none {
+        border-radius: 0;
+    }
+
+    .md\:o-media--16\:9 {
+        padding-top: 56.25%;
+    }
+
+    .md\:mt-m {
+        margin-top: 1rem;
+    }
+
+    .md\:text-s {
+        font-size: .875rem;
     }
 }
 
@@ -501,6 +558,11 @@
     .showcaseTrending .showcase-grid.articleGridTrending {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr;
+    }
+
+    .lg\:grid-col--1\/4 {
+        flex-basis: 25%;
+        max-width: 25%;
     }
 }
 
