@@ -51,6 +51,15 @@ h1, h2 {
     font-size: 2rem;
 }
 
+h3 {
+    font-family: 'Trump Soft Pro', 'Arial Narrow', sans-serif;
+    font-weight: bold;
+    letter-spacing: .01em;
+    line-height: 1.15;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
 h3, h4 {
     color: #000;
     color: rgba(0, 0, 0, var(--text-opacity));
@@ -58,6 +67,12 @@ h3, h4 {
 
 h3, h4 {
     line-height: 1.5;
+}
+
+h4 {
+    font-family: 'Graphik', sans-serif;
+    font-weight: 500;
+    font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 1;
 }
 
 h5 {
@@ -412,10 +427,6 @@ img, svg {
     margin: 0 auto 1em;
 }
 
-.text-center {
-    text-align: center;
-}
-
 .nextHomeHeaderGrid .mob-tagline {
     display: block;
     font-size: 18px !important;
@@ -689,6 +700,73 @@ h1.card-heading, h2, h3.card-heading {
     font-size: 1.75rem !important;
 }
 
+.bodyNews-heading {
+    flex: 1 1 0%;
+    text-align: center;
+}
+
+.showcaseTrending .bodyNews-heading {
+    color: #a7aab2;
+}
+
+.showcaseTrending .trending-articles {
+    max-width: 100%;
+    padding: 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid--gap-s {
+    margin: .25rem;
+}
+
+.showcaseTrending .showcase-grid {
+    display: block;
+}
+
+.showcaseTrending .showcase-grid.articleGridTrending {
+    display: grid;
+    margin: 1.5rem;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: space-around;
+}
+
+.showcaseTrending .showcase-grid li.articleGridTrendingListItem a {
+    display: flex;
+    flex-direction: row;
+}
+
+.showcaseTrending .showcase-grid li.articleGridTrendingListItem a span.trendingIndex {
+    color: #c09;
+    color: rgba(204, 0, 153, var(--text-opacity));
+    font-family: 'Trump Soft Pro', 'Arial Narrow', sans-serif;
+    letter-spacing: .01em;
+    line-height: 1.15;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0;
+    font-size: 38px;
+}
+
+.showcaseTrending .showcase-grid h4 {
+    padding: 0 1rem;
+    transition: all .25s ease-in-out;    
+}
+
+.showcaseTrending .showcase-grid li.articleGridTrendingListItem a span.trendingTitle {
+    transition: box-shadow .15s ease;
+}
+
+.showcaseTrending .showcase-grid li.articleGridTrendingListItem a span.trendingTitle:hover {
+    box-shadow: 0 2px 0 rgba(204, 0, 153, .33);
+}
+
 @-webkit-keyframes navMenuLinkTail {
     0% {transform:translateY(0)}
     to {transform:translateY(-6px)}
@@ -737,4 +815,14 @@ h1.card-heading, h2, h3.card-heading {
 @keyframes navSubmenu {
     0% {transform:translateY(-8px)}
     to {transform:translateY(0)}
+}
+
+@media (min-width: 768px) {
+    .bodyNews-heading {
+        text-align: left;
+    }
+}
+
+.text-center {
+    text-align: center;
 }
