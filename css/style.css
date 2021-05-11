@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
 @import url('font.css');
+@import url('../assets/fonts/Trump-Soft-Pro-Font-Family/font/stylesheet.css');
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -658,6 +659,34 @@ h1.card-heading, h2, h3.card-heading {
 
 .br {
     height: 38px;
+}
+
+.showcaseTrending {
+    padding: 3em 0;
+    background: #f7f8f8;
+}
+
+.bodyBlock {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+.showcaseTrending .wrapper.wrapper--wide {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.showcase.showcaseTrending.bodyBlock {
+    padding: 4em 0 !important;
+}
+
+.bodyNews-header {
+    margin-bottom: 2rem;
+}
+
+.bodyBlock-heading {
+    margin-bottom: 2rem !important;
+    font-size: 1.75rem !important;
 }
 
 @-webkit-keyframes navMenuLinkTail {

@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Trump Soft Pro';
+    src: url('TrumpSoftPro-Bold.eot');
+    src: local('Trump Soft Pro Bold'), local('TrumpSoftPro-Bold'),
+        url('TrumpSoftPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TrumpSoftPro-Bold.woff2') format('woff2'),
+        url('TrumpSoftPro-Bold.woff') format('woff'),
+        url('TrumpSoftPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trump Soft Pro';
+    src: url('TrumpSoftPro-Italic.eot');
+    src: local('Trump Soft Pro Italic'), local('TrumpSoftPro-Italic'),
+        url('TrumpSoftPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('TrumpSoftPro-Italic.woff2') format('woff2'),
+        url('TrumpSoftPro-Italic.woff') format('woff'),
+        url('TrumpSoftPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trump Soft Pro';
+    src: url('TrumpSoftPro-Medium.eot');
+    src: local('Trump Soft Pro Medium'), local('TrumpSoftPro-Medium'),
+        url('TrumpSoftPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TrumpSoftPro-Medium.woff2') format('woff2'),
+        url('TrumpSoftPro-Medium.woff') format('woff'),
+        url('TrumpSoftPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trump Soft Pro';
+    src: url('TrumpSoftPro-MediumIt.eot');
+    src: local('Trump Soft Pro Medium Italic'), local('TrumpSoftPro-MediumIt'),
+        url('TrumpSoftPro-MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('TrumpSoftPro-MediumIt.woff2') format('woff2'),
+        url('TrumpSoftPro-MediumIt.woff') format('woff'),
+        url('TrumpSoftPro-MediumIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trump Soft Pro';
+    src: url('TrumpSoftPro-BoldItalic.eot');
+    src: local('Trump Soft Pro Bold Italic'), local('TrumpSoftPro-BoldItalic'),
+        url('TrumpSoftPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('TrumpSoftPro-BoldItalic.woff2') format('woff2'),
+        url('TrumpSoftPro-BoldItalic.woff') format('woff'),
+        url('TrumpSoftPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trump Soft Pro';
+    src: url('TrumpSoftPro.eot');
+    src: local('Trump Soft Pro'), local('TrumpSoftPro'),
+        url('TrumpSoftPro.eot?#iefix') format('embedded-opentype'),
+        url('TrumpSoftPro.woff2') format('woff2'),
+        url('TrumpSoftPro.woff') format('woff'),
+        url('TrumpSoftPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
