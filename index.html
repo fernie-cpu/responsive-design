@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="shortcut icon" href="assets/img/favicon/favicon-16x16.webp" type="image/x-icon">
     <title>TNW | The heart of tech</title>
 </head>
@@ -249,7 +250,7 @@
                 <div class="wrapper wrapper--wide">
                     <div class="showcase-grid">
                         <div class="showcase-grid showcase-scroller js-parallaxRoot">
-                            <article class="showcase-article">
+                            <article class="showcase-article" data-how-about>
                                 <div class="card card--visual">
                                     <a href="#" class="card-image js-parallax media md:media--stretch">
                                         <img src="assets/img/articles/clubhouse_2021-05-10-073045_icfy.jpeg" alt="Clubhouse has officially launched its Android app" class="card-imageImage parallaxLayer parallax-layer">
@@ -262,7 +263,7 @@
                                     </header>
                                 </div>
                             </article>
-                            <article class="showcase-article">
+                            <article class="showcase-article" data-work>
                                 <div class="card card--visual">
                                     <a href="#" class="card-image js-parallax media md:media--stretch">
                                         <img src="assets/img/articles/Windows-10X.jpeg" style="transform: translate3d(1.65746%, 0px, 0px);" alt="Microsoft reportedly shelves Windows 10X" class="card-imageImage parallaxLayer parallax-layer">
@@ -320,5 +321,25 @@
             <section class="br"></section>
         </div>
     </div>
+
+    <!--Modal-->
+    <div class="modal" data-modal>
+        <div class="modal-content">
+            <img src="https://media1.tenor.com/images/43271101e4c50b054bd072ca52a81b65/tenor.gif?itemid=19053606" alt="how about no">
+            <div class="modal-text">
+                <p class="para-modal">This ain't the real deal son</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal" data-not-gonna-work>
+        <div class="modal-content">
+            <img src="https://media1.tenor.com/images/2ca1bdf42765d3cdb3de15c6da8c2245/tenor.gif" alt="ain't gonna work">
+            <div class="modal-text">
+                <span class="para-modal">Nothing to see here either.</span>
+                <span class="para-modal">I told ya, it's not the real thing</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/goofy.js"></script>
 </body>
 </html>
