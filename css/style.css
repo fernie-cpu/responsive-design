@@ -1184,6 +1184,10 @@ h1.card-heading, h2, h3.card-heading {
     color: currentColor;
 }
 
+.showcaseVideo-scrollerFade {
+    display: none;
+}
+
 @-webkit-keyframes navMenuLinkTail {
     0% {transform:translateY(0)}
     to {transform:translateY(-6px)}
