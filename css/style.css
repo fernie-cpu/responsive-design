@@ -19,6 +19,7 @@
 :root {
     --bg-opacity: 1;
     --text-opacity: 1;
+    --border-opacity: 1;
 }
 
 body {
@@ -875,6 +876,12 @@ h1.card-heading, h2, h3.card-heading {
     }
 }
 
+@media (min-width: 1024px) {
+    .showcase {
+        padding: 6rem 0;
+    }
+}
+
 .showcaseChannels {
     background-color: #f7f8f8;
     background-color: rgba(247, 248, 248, var(--bg-opacity));
@@ -1098,6 +1105,83 @@ h1.card-heading, h2, h3.card-heading {
 .footer-contact .footer-heading {
     color: #fff;
     color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.showcaseVideo {
+    padding: 4em 0;
+    background-color: #a7aab2;
+    background-color: rgba(247, 248, 248, var(--bg-opacity));
+}
+
+.showcaseVideo-heading {
+    margin-bottom: 2rem;
+    color: #000;
+    color: rgba(0, 0, 0, var(--text-opacity));
+    text-align: center;
+}
+
+.showcaseVideo-container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.showcaseVideo-mainStage {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, var(--bg-opacity));
+}
+
+.media--16\:9 {
+    padding-top: 56.25%;
+}
+
+.showcaseVideo-mainStageHeader {
+    display: flex;
+    padding: 1.5rem;
+    border-top: 1px solid rgba(36, 38, 44, var(--border-opacity));
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.showcaseVideo-mainStageHeading {
+    margin: 0;
+    font-size: 1.125rem;
+    font-family: 'Graphik', sans-serif;
+    text-transform: none;
+    line-height: 1.75;
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+    font-weight: 500;
+}
+
+.showcaseVideo-mainStageMeta {
+    color: #a7aab2;
+    color: rgba(167, 170, 178, var(--text-opacity));
+    font-size: 12px;
+}
+
+.showcaseVideo-playlist {
+    padding: .5rem 1rem;
+}
+
+.showcaseVideo-scroller {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.showcaseVideo-playlistItem {
+    padding: .5rem;
+    color: #000;
+    color: rgba(0, 0, 0, var(--text-opacity));
+    flex: 0 0 224px;
+}
+
+.showcaseVideo-playlistItemTitle {
+    padding-top: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: currentColor;
 }
 
 @-webkit-keyframes navMenuLinkTail {
