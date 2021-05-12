@@ -1188,6 +1188,32 @@ h1.card-heading, h2, h3.card-heading {
     display: none;
 }
 
+.showcasePartner {
+    padding: 6em 0 2em;
+}
+
+.mb-xl {
+    margin-bottom: 2rem;
+}
+
+.c-bodyBlock-subheading {
+    margin-bottom: .5rem;
+}
+
+.sectionHeader-intro {
+    font-size: 1.125rem;
+    margin-top: 1.5rem;
+}
+
+.grid--gap-xl {
+    margin: -1rem;
+}
+
+.grid-col--1\/2 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
 @-webkit-keyframes navMenuLinkTail {
     0% {transform:translateY(0)}
     to {transform:translateY(-6px)}
@@ -1261,6 +1287,29 @@ h1.card-heading, h2, h3.card-heading {
 
 .button:hover {
     box-shadow: inset 0 0 0 1px rgba(80, 86, 102, .5);
+}
+
+.button-primary,
+.button-primary:hover {
+    background-color: #0dd;
+    background-color: rgba(0, 221, 221 var(--bg-opacity));
+}
+
+.button-primary,
+.button-primary:hover {
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+    box-shadow: none;
+}
+
+.button-primary {
+    background-color: #0cc;
+    background-color: rgba(0, 204, 204, var(--bg-opacity));
+}
+
+.button-primary:hover {
+    background-color: #0dd;
+    background-color: rgba(0, 221, 221, var(--bg-opacity));
 }
 
 .m-none {

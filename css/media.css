@@ -280,6 +280,38 @@
         height: 2rem;
         background: linear-gradient(transparent, #f7f8f8);
     }
+
+    .md\:grid--gap-m {
+        margin: .5rem;
+    }
+
+    .md\:mb-none {
+        margin-bottom: 0;
+    }
+
+    .md\:text-left {
+        text-align: left;
+    }
+
+    .md\:grid--gap-m > .grid-col {
+        border-width: .5rem;
+    }
+
+    .md\:pr-l {
+        padding-right: 1.5rem;
+    }
+
+    .md\:sectionHeader--left {
+        text-align: left;
+    }
+
+    .md\:flex {
+        display: flex;
+    }
+
+    .md\:items-center {
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -639,6 +671,14 @@
 
     .divider-cta h2.channel-ctaHeading {
         font-size: 3rem;
+    }
+
+    .lg\:grid--gap-l {
+        margin: -.75rem;
+    }
+
+    .lg\:grid--gap-l > .grid-col {
+        border-width: .75rem;
     }
 }
 
