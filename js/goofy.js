@@ -1,7 +1,6 @@
 const modal = document.querySelector("[data-modal]");
 const howaboutno = document.querySelector("[data-how-about]");
 const notwork = document.querySelector("[data-work]");
-// const aintgonwork = document.querySelector("[data-not-gonna-work]");
 
 const howabout = () => {
   const modal = document.createElement("div");
