@@ -167,12 +167,6 @@
         font-size: 2.5rem !important;
     }
 
-    .bodyNews-header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 3rem;
-    }
-
     .showcaseTrending .trending-articles {
         padding: 0 3em;
     }
@@ -181,10 +175,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 192px);
-    }
-
-    .c-bodyBlock {
-        padding: 7rem 0;
     }
 
     .md\:grid-col--1\/2 {
@@ -222,6 +212,14 @@
 
     .md\:mt-2xl {
         margin-top: 3.5rem;
+    }
+
+    .divider-cta form {
+        width: 100%;
+    }
+
+    .divider-cta h2.channel-ctaHeading {
+        font-size: 2rem;
     }
 }
 
@@ -567,6 +565,25 @@
     .lg\:grid-col--1\/4 {
         flex-basis: 25%;
         max-width: 25%;
+    }
+
+    .scroller--channels-explorer {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .scroller--channels-explorer .scroller-item {
+        flex-basis: calc(20% - 1rem);
+    }
+
+    .annoucement-message {
+        padding-right: 0;
+    }
+
+    .divider-cta h2.channel-ctaHeading {
+        font-size: 3rem;
     }
 }
 
