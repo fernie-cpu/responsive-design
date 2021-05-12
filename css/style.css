@@ -1062,6 +1062,44 @@ h1.card-heading, h2, h3.card-heading {
     order: 3;
 }
 
+.socials-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.footer-contact {
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.footer-contactItem:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.footer-contactLink {
+    display: block;
+    opacity: .5;
+    transition-duration: .15s;
+    color: #fff;
+}
+
+.footer-contactLink:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.footer-contactIcon {
+    fill: currentColor;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.footer-contact .footer-heading {
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+}
+
 @-webkit-keyframes navMenuLinkTail {
     0% {transform:translateY(0)}
     to {transform:translateY(-6px)}
