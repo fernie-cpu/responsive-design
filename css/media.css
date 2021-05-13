@@ -429,7 +429,7 @@
         transform: translateX(100%);
     }
 
-    .nav-menuToggle ~ .nav-levelLabel {
+    .nav-menuToggle:checked ~ .nav-levelLabel {
         -webkit-animation: navIconPop .15s ease-out both;
         animation: navIconPop .15s ease-out both;
         background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PScwIDAgMjQgMjQnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZmlsbD0nI0ZGRicgZD0nTTE5Ljc3OCA1LjYzNmwtMS40MTQtMS40MTRMMTIgMTAuNTg2IDUuNjM2IDQuMjIyIDQuMjIyIDUuNjM2IDEwLjU4NiAxMmwtNi4zNjQgNi4zNjQgMS40MTQgMS40MTRMMTIgMTMuNDE0bDYuMzY0IDYuMzY0IDEuNDE0LTEuNDE0TDEzLjQxNCAxMmw2LjM2NC02LjM2NHonLz48L3N2Zz4=);
@@ -698,6 +698,10 @@
     }
 
     .nav-footer {
+        display: none;
+    }
+
+    .nav-levelLabel {
         display: none;
     }
 
