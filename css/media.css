@@ -385,6 +385,10 @@
     .card-header.smallAdvertPane {
         display: none;
     }
+
+    .showcase.advert {
+        display: none;
+    }
 }
 
 @media (max-width: 1023px)  {
