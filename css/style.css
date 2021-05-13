@@ -611,7 +611,7 @@ h1.card-heading, h2, h3.card-heading {
 .card--dark .card-heading a,
 .card--visual .card .meta-link:hover,
 .card--visual .card-heading a,
-.footer {
+.footer, .c-footer {
     color: #fff;
     color: rgba(255, 255, 255, var(--text-opacity));
 }
@@ -1104,6 +1104,32 @@ h1.card-heading, h2, h3.card-heading {
     height: 1.5rem;
 }
 
+.footer-contactIcon,
+.footer-heading {
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.footer-heading {
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.footer-menu {
+    line-height: 1.75;
+}
+
+.footer-menuLink {
+    box-shadow: 0 1px 0 transparent;
+    transition-duration: .15s;
+}
+
+.footer-menuLink:hover {
+    color: #0cc;
+    color: rgba(0, 204, 204, var(--text-opacity));
+    box-shadow: 0 1px 0 rgb(0, 204, 204, .5);
+}
+
 .footer-contact .footer-heading {
     color: #fff;
     color: rgba(255, 255, 255, var(--text-opacity));
@@ -1272,8 +1298,6 @@ h1.card-heading, h2, h3.card-heading {
     padding: 4rem 0;
     background-color: #000;
     background-color: rgba(0, 0, 0, var(--bg-opacity));
-    color: #fff;
-    color: rgba(255, 255, 255, var(--text-opacity));
 }
 
 .c-footer-logoContact {
@@ -1292,6 +1316,34 @@ h1.card-heading, h2, h3.card-heading {
 .c-footer-tagLine {
     margin-bottom: 2rem;
     font-size: 1.5rem;
+}
+
+.more {
+    padding-left: .75rem;
+}
+
+.footer-legal {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(80, 86, 102, var(--border-opacity));
+    color: #a7aab2;
+    color: rgba(167, 170, 178, var(--text-opacity));
+    font-size: .875rem;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.feedback {
+    color: #fff;
+    transition: all .25s ease-in-out;
+}
+
+.feedback:hover {
+    color: #c09;
 }
 
 @-webkit-keyframes navMenuLinkTail {

@@ -41,6 +41,21 @@
     }
 }
 
+@media (max-width: 767px) {
+    .max-md\:px-l {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .partner-custom {
+        width: 6rem;
+    }
+
+    .bodyNews-buttons .button {
+        flex: 1 1 0%;
+    }
+}
+
 @media (min-width: 768px) {
     h1, h2 {
         font-size: 3rem;
@@ -324,6 +339,10 @@
     .md\:grid-col--1\/3 {
         flex-basis: 33.3333333333%;
         max-width: 33.3333333333%;
+    }
+
+    .more {
+        padding-left: 0;
     }
 }
 
