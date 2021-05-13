@@ -312,6 +312,10 @@
     .md\:items-center {
         align-items: center;
     }
+
+    .md\:w-6xl {
+        width: 7rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -679,6 +683,30 @@
 
     .lg\:grid--gap-l > .grid-col {
         border-width: .75rem;
+    }
+
+    .lg\:flex-row {
+        flex-direction: row;
+    }
+
+    .lg\:items-center {
+        align-items: center;
+    }
+
+    .lg\:m-none {
+        margin: 0;
+    }
+
+    .lg\:text-l {
+        font-size: 1.125rem;
+    }
+
+    .lg\:mt-none {
+        margin-top: 0;
+    }
+
+    .lg\:ml-m {
+        margin-left: 1rem;
     }
 }
 

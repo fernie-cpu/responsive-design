@@ -502,12 +502,14 @@ img, svg {
 .media>* {
     position: absolute;
     background-size: cover;
+    -o-object-fit: cover;
     object-fit: cover;
     height: 100%;
     width: 100%;
     bottom: 0;
     right: 0;
     background-position: 50% 50%;
+    -o-object-position: 50% 50%;
     object-position: 50% 50%;
 }
 
@@ -1131,7 +1133,9 @@ h1.card-heading, h2, h3.card-heading {
 }
 
 .media--16\:9 {
+    position: relative;
     padding-top: 56.25%;
+    height: 0;
 }
 
 .showcaseVideo-mainStageHeader {
@@ -1212,6 +1216,35 @@ h1.card-heading, h2, h3.card-heading {
 .grid-col--1\/2 {
     flex-basis: 50%;
     max-width: 50%;
+}
+
+.grid--gap-xl > .grid-col {
+    border-width: 1rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-5xl {
+    width: 6rem;
+}
+
+.media--1\:1 {
+    width: 7rem;
+}
+
+.text-m {
+    font-size: 1rem;
+}
+
+.mt-m {
+    margin-top: 1rem;
+}
+
+.mt-xl {
+    margin-top: 2rem;
 }
 
 @-webkit-keyframes navMenuLinkTail {
