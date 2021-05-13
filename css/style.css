@@ -1231,7 +1231,7 @@ h1.card-heading, h2, h3.card-heading {
     width: 6rem;
 }
 
-.media--1\:1 {
+.partner-custom {
     width: 7rem;
 }
 
@@ -1245,6 +1245,53 @@ h1.card-heading, h2, h3.card-heading {
 
 .mt-xl {
     margin-top: 2rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.grid--gap-s > .grid-col {
+    border-width: .25rem;
+}
+
+.showcasePartner-link {
+    display: block;
+    opacity: .5;
+    transition: .25s;
+}
+
+.showcasePartner-link:hover {
+    opacity: .75;
+}
+
+.c-footer {
+    z-index: 3;
+    position: relative;
+    content-visibility: auto;
+    padding: 4rem 0;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, var(--bg-opacity));
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.c-footer-logoContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.c-footer-logo {
+    display: block;
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.c-footer-tagLine {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
 }
 
 @-webkit-keyframes navMenuLinkTail {

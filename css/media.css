@@ -316,6 +316,15 @@
     .md\:w-6xl {
         width: 7rem;
     }
+
+    .md\:mt-3xl {
+        margin-top: 4rem;
+    }
+
+    .md\:grid-col--1\/3 {
+        flex-basis: 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -707,6 +716,24 @@
 
     .lg\:ml-m {
         margin-left: 1rem;
+    }
+
+    .lg\:mb-xl {
+        margin-bottom: 2rem;
+    }
+
+    .lg\:mt-3xl {
+        margin-top: 4rem;
+    }
+
+    .lg\:grid-col--1\/8 {
+        flex-basis: 12.5%;
+        max-width: 12.5%;
+    }
+
+    .lg\:grid-col--1\/2 {
+        flex-basis: 50%;
+        max-width: 50%;
     }
 }
 
