@@ -12,8 +12,10 @@
     <title>TNW | The heart of tech</title>
 </head>
 <body>
-    <nav class="main-nav">
+    <nav class="main-nav has-level2">
         <div class="nav-1">
+            <input type="checkbox" class="nav-menuToggle" id="nav-menuLevel1">
+            <label for="nav-menuLevel1" class="nav-levelLabel nav-levelLabel--1"></label>
             <h1 class="logo">
                 <a href="#" class="logo-link">
                     <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 66 16">
@@ -21,7 +23,7 @@
                     </svg>
                 </a>
             </h1>
-            <div class="nav-menuContainer">
+            <div class="nav-menuContainer nav-menuContainer--1">
                 <ul class="nav-menu">
                     <li class="nav-menuItem">
                         <a href="#" class="nav-menuLink">Home</a>
@@ -135,6 +137,7 @@
                         <a href="" class="nav-menuLink">Spaces</a>
                     </li>
                     <li class="nav-menuItem has-menu">
+                        <input type="checkbox" class="nav-menuToggle">
                         <a class="nav-menuLink">More</a>
                         <ul class="nav-submenu">
                             <li class="nav-submenuItem">
@@ -223,578 +226,604 @@
                 </footer>
             </div>
         </div>
-        <!-- levels 2 goes here -->
+        <div class="nav-2">
+            <input type="checkbox" class="nav-menuToggle">
+            <div class="nav-pwd">
+                <a class="nav-pwdLogo">
+                    <svg>
+                        <use xLink:href="assets/img/svg/icons.svg#tnw"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="nav-menuContainer nav-menuContainer--2"></div>
+        </div>
     </nav>
     <div class="page">
         <div class="page-main">
-            <div class="tnw-ad"></div>
-            <section class="showcase nextHomeHeaderGrid homeLead">
-                <div class="wrapper">
-                    <div class="showcase-header nxtHome">
-                        <header class="sectionHeader--center">
-                            <div class="sectionHeader-heading homepage">
-                                <a href="#">
-                                    <svg serveAspectRatio="xMidYMid meet" viewBox="0 0 66 16">
-                                        <path fill="#000" class="nextLogo" d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path>
-                                    </svg>
-                                </a>
+            <div class="nextHome">
+                <div class="tnw-ad"></div>
+                <section class="showcase nextHomeHeaderGrid homeLead">
+                    <div class="wrapper">
+                        <div class="showcase-header nxtHome">
+                            <header class="sectionHeader--center">
+                                <div class="sectionHeader-heading homepage">
+                                    <a href="#">
+                                        <svg serveAspectRatio="xMidYMid meet" viewBox="0 0 66 16">
+                                            <path fill="#000" class="nextLogo" d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <h1 class="text-center mob-tagline">The heart of tech</h1>
+                            </header>
+                            <div class="brandIntro-text">
+                                <h1>The heart of tech</h1>
                             </div>
-                            <h1 class="text-center mob-tagline">The heart of tech</h1>
-                        </header>
-                        <div class="brandIntro-text">
-                            <h1>The heart of tech</h1>
                         </div>
                     </div>
-                </div>
-                <div class="wrapper wrapper--wide">
-                    <div class="showcase-grid">
-                        <div class="showcase-grid showcase-scroller js-parallaxRoot">
-                            <article class="showcase-article" data-how-about>
-                                <div class="card card--visual">
-                                    <a href="#" class="card-image js-parallax media md:media--stretch">
-                                        <img src="assets/img/articles/clubhouse_2021-05-10-073045_icfy.jpeg" alt="Clubhouse has officially launched its Android app" class="card-imageImage parallaxLayer parallax-layer">
-                                    </a>
-                                    <header class="card-header">
-                                        <h6 class="card-label">Launch</h6>
-                                        <h3 class="card-heading">
-                                            <a href="#">Clubhouse has officially launched its Android app</a>
-                                        </h3>
-                                    </header>
-                                </div>
-                            </article>
-                            <article class="showcase-article" data-work>
-                                <div class="card card--visual">
-                                    <a href="#" class="card-image js-parallax media md:media--stretch">
-                                        <img src="assets/img/articles/Windows-10X.jpeg" style="transform: translate3d(1.65746%, 0px, 0px);" alt="Microsoft reportedly shelves Windows 10X" class="card-imageImage parallaxLayer parallax-layer">
-                                    </a>
-                                    <header class="card-header">
-                                        <h6 class="card-label">bye Bye</h6>
-                                        <h3 class="card-heading">
-                                            <a href="#">Microsoft reportedly shelves Windows 10X</a>
-                                        </h3>
-                                    </header>
-                                </div>
-                            </article>
-                            <article class="showcase-article">
-                                <div class="card card--visual">
-                                    <a href="#" class="card-image js-parallax media md:media--stretch">
-                                        <img src="assets/img/promo/next_home-promo_tnw2021-1146x372.jpg" alt="Ad panel" class="card-imageImage parallaxLayer parallax-layer">
-                                    </a>
-                                    <header class="card-header advertPane">
-                                        <h2 class="card-heading adpanel">Europe’s leading tech festival is leveling up</h2>
-                                        <h2 class="card-heading adpanel">TNW Conference goes hybrid</h2>
-                                        <a href="#" class="button adpanel button--rounded">Learn More</a>
-                                    </header>
-                                </div>
-                            </article>
-                            <article class="showcase-article">
-                                <div class="card card--visual">
-                                    <a href="#" class="card-image js-parallax media md:media--stretch">
-                                        <img src="assets/img/articles/mushrooms.jpeg" style="transform: translate3d(-7.51381%, 0px, 0px);" alt="Mushrooms on Mars is a hoax — stop believing hack ‘scientists" class="card-imageImage parallaxLayer parallax-layer">
-                                    </a>
-                                    <header class="card-header">
-                                        <h6 class="card-label">FAKE NEWS</h6>
-                                        <h3 class="card-heading">
-                                            <a href="#">Mushrooms on Mars is a hoax — stop believing hack ‘scientists</a>
-                                        </h3>
-                                    </header>
-                                </div>
-                            </article>
-                            <article class="showcase-article">
-                                <div class="card card--visual">
-                                    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="card-image js-parallax media md:media--stretch">
-                                        <img src="assets/img/articles/sonos-gif.gif" style="transform: translate3d(-7.51381%, 0px, 0px);" alt="Mushrooms on Mars is a hoax — stop believing hack ‘scientists" class="card-imageImage parallaxLayer parallax-layer">
-                                    </a>
-                                    <header class="card-header">
-                                        <h6 class="card-label">VIDEO</h6>
-                                        <h3 class="card-heading">
-                                            <a href="https://youtu.be/dQw4w9WgXcQ">Sonos Roam review: Smart speaker, even smarter business</a>
-                                        </h3>
-                                    </header>
-                                </div>
-                            </article>
+                    <div class="wrapper wrapper--wide">
+                        <div class="showcase-grid">
+                            <div class="showcase-grid showcase-scroller js-parallaxRoot">
+                                <article class="showcase-article" data-how-about>
+                                    <div class="card card--visual">
+                                        <a href="#" class="card-image js-parallax media md:media--stretch">
+                                            <img src="assets/img/articles/clubhouse_2021-05-10-073045_icfy.jpeg" alt="Clubhouse has officially launched its Android app" class="card-imageImage parallaxLayer parallax-layer">
+                                        </a>
+                                        <header class="card-header">
+                                            <h6 class="card-label">Launch</h6>
+                                            <h3 class="card-heading">
+                                                <a href="#">Clubhouse has officially launched its Android app</a>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </article>
+                                <article class="showcase-article" data-work>
+                                    <div class="card card--visual">
+                                        <a href="#" class="card-image js-parallax media md:media--stretch">
+                                            <img src="assets/img/articles/Windows-10X.jpeg" style="transform: translate3d(1.65746%, 0px, 0px);" alt="Microsoft reportedly shelves Windows 10X" class="card-imageImage parallaxLayer parallax-layer">
+                                        </a>
+                                        <header class="card-header">
+                                            <h6 class="card-label">bye Bye</h6>
+                                            <h3 class="card-heading">
+                                                <a href="#">Microsoft reportedly shelves Windows 10X</a>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </article>
+                                <article class="showcase-article">
+                                    <div class="card card--visual">
+                                        <a href="#" class="card-image js-parallax media md:media--stretch">
+                                            <img src="assets/img/promo/next_home-promo_tnw2021-1146x372.jpg" alt="Ad panel" class="card-imageImage parallaxLayer parallax-layer">
+                                        </a>
+                                        <header class="card-header advertPane">
+                                            <h2 class="card-heading adpanel">Europe’s leading tech festival is leveling up</h2>
+                                            <h2 class="card-heading adpanel">TNW Conference goes hybrid</h2>
+                                            <a href="#" class="button adpanel button--rounded">Learn More</a>
+                                        </header>
+                                    </div>
+                                </article>
+                                <article class="showcase-article">
+                                    <div class="card card--visual">
+                                        <a href="#" class="card-image js-parallax media md:media--stretch">
+                                            <img src="assets/img/articles/mushrooms.jpeg" style="transform: translate3d(-7.51381%, 0px, 0px);" alt="Mushrooms on Mars is a hoax — stop believing hack ‘scientists" class="card-imageImage parallaxLayer parallax-layer">
+                                        </a>
+                                        <header class="card-header">
+                                            <h6 class="card-label">FAKE NEWS</h6>
+                                            <h3 class="card-heading">
+                                                <a href="#">Mushrooms on Mars is a hoax — stop believing hack ‘scientists</a>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </article>
+                                <article class="showcase-article">
+                                    <div class="card card--visual">
+                                        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="card-image js-parallax media md:media--stretch">
+                                            <img src="assets/img/articles/sonos-gif.gif" style="transform: translate3d(-7.51381%, 0px, 0px);" alt="Mushrooms on Mars is a hoax — stop believing hack ‘scientists" class="card-imageImage parallaxLayer parallax-layer">
+                                        </a>
+                                        <header class="card-header">
+                                            <h6 class="card-label">VIDEO</h6>
+                                            <h3 class="card-heading">
+                                                <a href="https://youtu.be/dQw4w9WgXcQ">Sonos Roam review: Smart speaker, even smarter business</a>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="br"></section>
-            <section class="showcase showcaseTrending bodyBlock">
-                <div class="wrapper wrapper--wide">
-                    <div class="bodyNews-header bodyBlock-heading">
-                        <h3 class="bodyNews-heading text-center">POPULAR ARTICLES TODAY</h3>
+                </section>
+                <section class="showcase advert">
+                    <div class="showcase-article">
+                        <div class="card card--visual">
+                            <a href="#" class="card-image js-parallax media md:media--stretch">
+                                <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fcompanies%2Fnext_home-promo_tnw2021-1146x372.jpg&signature=bead864af68de0dccd3a4c7a0027bc24" alt="ad panel" class="card-imageImage parallax-content js-parallaxLayer">
+                            </a>
+                            <header class="card-header smallAdvertPane">
+                                <h2 class="card-heading adpanel">Europe’s leading tech festival is leveling up —</h2>
+                                <h2 class="card-heading adpanel">TNW Conference goes hybrid</h2>
+                                <a href="#" class="button adpanel button--rounded">LEARN MORE</a>
+                            </header>
+                        </div>
                     </div>
-                    <div class="trending-articles">
-                        <ol class="showcase-grid grid grid--centered grid--gap-s articleGridTrending 5">
-                            <li class="articleGridTrendingListItem">
-                                <a href="#">
-                                    <span class="trendingIndex">1</span>
-                                    <h4>
-                                        <span class="trendingTitle">4 ideas about AI that even ‘experts’ get wrong</span>
-                                    </h4>
-                                </a>
-                            </li>
-                            <li class="articleGridTrendingListItem">
-                                <a href="#">
-                                    <span class="trendingIndex">2</span>
-                                    <h4>
-                                        <span class="trendingTitle">Study finds driving behavior can be an indicator of dementia</span>
-                                    </h4>
-                                </a>
-                            </li>
-                            <li class="articleGridTrendingListItem">
-                                <a href="#">
-                                    <span class="trendingIndex">3</span>
-                                    <h4>
-                                        <span class="trendingTitle">Signal’s smartass ad exposes Facebook’s creepy data collection</span>
-                                    </h4>
-                                </a>
-                            </li>
-                            <li class="articleGridTrendingListItem">
-                                <a href="#">
-                                    <span class="trendingIndex">4</span>
-                                    <h4>
-                                        <span class="trendingTitle">Microsoft reportedly shelves Windows 10X, its Chrome OS competitor</span>
-                                    </h4>
-                                </a>
-                            </li>
-                            <li class="articleGridTrendingListItem">
-                                <a href="#">
-                                    <span class="trendingIndex">5</span>
-                                    <h4>
-                                        <span class="trendingTitle">Mushrooms on Mars is a hoax — stop believing hack ‘scientists’</span>
-                                    </h4>
-                                </a>
-                            </li>
-                        </ol>
+                </section>
+                <section class="br"></section>
+                <section class="showcase showcaseTrending bodyBlock">
+                    <div class="wrapper wrapper--wide">
+                        <div class="bodyNews-header bodyBlock-heading">
+                            <h3 class="bodyNews-heading text-center">POPULAR ARTICLES TODAY</h3>
+                        </div>
+                        <div class="trending-articles">
+                            <ol class="showcase-grid grid grid--centered grid--gap-s articleGridTrending 5">
+                                <li class="articleGridTrendingListItem">
+                                    <a href="#">
+                                        <span class="trendingIndex">1</span>
+                                        <h4>
+                                            <span class="trendingTitle">4 ideas about AI that even ‘experts’ get wrong</span>
+                                        </h4>
+                                    </a>
+                                </li>
+                                <li class="articleGridTrendingListItem">
+                                    <a href="#">
+                                        <span class="trendingIndex">2</span>
+                                        <h4>
+                                            <span class="trendingTitle">Study finds driving behavior can be an indicator of dementia</span>
+                                        </h4>
+                                    </a>
+                                </li>
+                                <li class="articleGridTrendingListItem">
+                                    <a href="#">
+                                        <span class="trendingIndex">3</span>
+                                        <h4>
+                                            <span class="trendingTitle">Signal’s smartass ad exposes Facebook’s creepy data collection</span>
+                                        </h4>
+                                    </a>
+                                </li>
+                                <li class="articleGridTrendingListItem">
+                                    <a href="#">
+                                        <span class="trendingIndex">4</span>
+                                        <h4>
+                                            <span class="trendingTitle">Microsoft reportedly shelves Windows 10X, its Chrome OS competitor</span>
+                                        </h4>
+                                    </a>
+                                </li>
+                                <li class="articleGridTrendingListItem">
+                                    <a href="#">
+                                        <span class="trendingIndex">5</span>
+                                        <h4>
+                                            <span class="trendingTitle">Mushrooms on Mars is a hoax — stop believing hack ‘scientists’</span>
+                                        </h4>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section class="c-bodyBlock bodyBlock">
-                <div class="wrapper">
-                    <div class="bodyNews-header m-none">
-                        <h2 class="bodyNews-heading bodyBlock-heading">Latest Stories</h2>
-                    </div>
-                    <ul class="grid grid--centered grid--gap-l sm:grid--gap-xl">
-                        <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
-                            <a href="#" class="flex md:flex-col">
-                                <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
-                                    <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
-                                            <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2Fhow2021.jpg&signature=cf29d273ae8053781128f4ec617e11a8" alt="Slitherine announces a plethora of new wargames at &#8216;Home of Wargamers 2021&#8217;">
+                </section>
+                <section class="c-bodyBlock bodyBlock">
+                    <div class="wrapper">
+                        <div class="bodyNews-header m-none">
+                            <h2 class="bodyNews-heading bodyBlock-heading">Latest Stories</h2>
+                        </div>
+                        <ul class="grid grid--centered grid--gap-l sm:grid--gap-xl">
+                            <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
+                                <a href="#" class="flex md:flex-col">
+                                    <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
+                                        <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
+                                                <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2Fhow2021.jpg&signature=cf29d273ae8053781128f4ec617e11a8" alt="Slitherine announces a plethora of new wargames at &#8216;Home of Wargamers 2021&#8217;">
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 md:mt-m">
+                                            <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
+                                                <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">Slitherine announces a plethora of new wargames at ‘Home of Wargamers 2021’</span>
+                                            </h4>
+                                            <p class="text-xs text-copy-light pt-xs md:text-s">9 minutes ago</p>
+                                        </div>
+                                </a>
+                            </li>
+                            <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
+                                <a href="#" class="flex md:flex-col">
+                                    <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
+                                        <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
+                                            <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FUntitled-design-2021-05-11T134927.374.png&signature=8ad58b8b246d6bc2ab96b93ec660b6ce" alt="England will launch its digital vaccine passport next week">
                                         </div>
                                     </div>
                                     <div class="flex-1 md:mt-m">
                                         <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
-                                            <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">Slitherine announces a plethora of new wargames at ‘Home of Wargamers 2021’</span>
+                                            <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">England will launch its digital vaccine passport next week</span>
                                         </h4>
-                                        <p class="text-xs text-copy-light pt-xs md:text-s">9 minutes ago</p>
+                                        <p class="text-xs text-copy-light pt-xs md:text-s">3 hours ago</p>
                                     </div>
-                            </a>
-                        </li>
-                        <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
-                            <a href="#" class="flex md:flex-col">
-                                <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
-                                    <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
-                                        <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FUntitled-design-2021-05-11T134927.374.png&signature=8ad58b8b246d6bc2ab96b93ec660b6ce" alt="England will launch its digital vaccine passport next week">
+                                </a>
+                            </li>
+                            <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
+                                <a href="#" class="flex md:flex-col">
+                                    <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
+                                        <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
+                                            <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FSmart-WiFi-Router.jpeg&signature=20ae7b5efc751b02f193b2b246298140" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="flex-1 md:mt-m">
-                                    <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
-                                        <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">England will launch its digital vaccine passport next week</span>
-                                    </h4>
-                                    <p class="text-xs text-copy-light pt-xs md:text-s">3 hours ago</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
-                            <a href="#" class="flex md:flex-col">
-                                <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
-                                    <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
-                                        <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FSmart-WiFi-Router.jpeg&signature=20ae7b5efc751b02f193b2b246298140" alt="">
+                                    <div class="flex-1 md:mt-m">
+                                        <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
+                                            <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">This smart WiFi router can deliver top speeds to up to 35 devices in your home for $99</span>
+                                        </h4>
+                                        <p class="text-xs text-copy-light pt-xs md:text-s">4 hours ago</p>
                                     </div>
-                                </div>
-                                <div class="flex-1 md:mt-m">
-                                    <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
-                                        <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">This smart WiFi router can deliver top speeds to up to 35 devices in your home for $99</span>
-                                    </h4>
-                                    <p class="text-xs text-copy-light pt-xs md:text-s">4 hours ago</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
-                            <a href="#" class="flex md:flex-col">
-                                <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
-                                    <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
-                                        <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FUntitled-design-20.jpg&signature=44de370b412d7a3f23788ed635ce9874" alt="">
+                                </a>
+                            </li>
+                            <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
+                                <a href="#" class="flex md:flex-col">
+                                    <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
+                                        <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
+                                            <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FUntitled-design-20.jpg&signature=44de370b412d7a3f23788ed635ce9874" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="flex-1 md:mt-m">
-                                    <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
-                                        <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">Utrecht will host world’s first vehicle-to-grid charging — it just needs the cars</span>
-                                    </h4>
-                                    <p class="text-xs text-copy-light pt-xs md:text-s">4 hours ago</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
-                            <a href="#" class="flex md:flex-col">
-                                <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
-                                    <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
-                                        <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2Fheader-image-sennheiser-sells-consumer-business.png&signature=f452169136dc33e9365588eab438cc45" alt="">
+                                    <div class="flex-1 md:mt-m">
+                                        <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
+                                            <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">Utrecht will host world’s first vehicle-to-grid charging — it just needs the cars</span>
+                                        </h4>
+                                        <p class="text-xs text-copy-light pt-xs md:text-s">4 hours ago</p>
                                     </div>
-                                </div>
-                                <div class="flex-1 md:mt-m">
-                                    <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
-                                        <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">Sennheiser’s sold its consumer audio business and I hate it</span>
-                                    </h4>
-                                    <p class="text-xs text-copy-light pt-xs md:text-s">4 hours ago</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
-                            <a href="#" class="flex md:flex-col">
-                                <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
-                                    <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
-                                        <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2Fadvertising-brand-startup-gq.png&signature=008f8c7bb13b903710b49e6f125a7cca" alt="">
+                                </a>
+                            </li>
+                            <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
+                                <a href="#" class="flex md:flex-col">
+                                    <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
+                                        <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
+                                            <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2Fheader-image-sennheiser-sells-consumer-business.png&signature=f452169136dc33e9365588eab438cc45" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="flex-1 md:mt-m">
-                                    <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
-                                        <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">Here’s what Freakonomics gets wrong about advertising</span>
-                                    </h4>
-                                    <p class="text-xs text-copy-light pt-xs md:text-s">5 hours ago</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
-                            <a href="#" class="flex md:flex-col">
-                                <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
-                                    <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
-                                        <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2Fbmw-i4-electric-car-future-ev-hans-zimmer.png&signature=65376367db09a13715300fd81178652a" alt="">
+                                    <div class="flex-1 md:mt-m">
+                                        <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
+                                            <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">Sennheiser’s sold its consumer audio business and I hate it</span>
+                                        </h4>
+                                        <p class="text-xs text-copy-light pt-xs md:text-s">4 hours ago</p>
                                     </div>
-                                </div>
-                                <div class="flex-1 md:mt-m">
-                                    <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
-                                        <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">Thanks to Hans Zimmer, the BMW i4 EV will sound brilliant</span>
-                                    </h4>
-                                    <p class="text-xs text-copy-light pt-xs md:text-s">5 hours ago</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
-                            <a href="#" class="flex md:flex-col">
-                                <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
-                                    <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
-                                        <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FLite-Brite-hed.jpg&signature=9350113c1577f3d6b41f4a2f7bd837ae" alt="">
+                                </a>
+                            </li>
+                            <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
+                                <a href="#" class="flex md:flex-col">
+                                    <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
+                                        <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
+                                            <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2Fadvertising-brand-startup-gq.png&signature=008f8c7bb13b903710b49e6f125a7cca" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="flex-1 md:mt-m">
-                                    <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
-                                        <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">DNA arranged into tiny Lite-Brite style pegboards could help us store tons of data for centuries</span>
-                                    </h4>
-                                    <p class="text-xs text-copy-light pt-xs md:text-s">6 hours ago</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="bodyNews-buttons mt-xxl md:justify-center md:mt-2xl">
-                        <a href="#" class="button button--next button--rounded">all news</a>
-                    </div>
-                </div>
-            </section>
-            <section class="showcaseChannels bodyBlock c-bodyBlock">
-                <div class="wrapper wrapper--wide overflow-hidden" style="overflow-x: hidden;">
-                    <div class="bodyNews-header m-none">
-                        <h2 class="bodyNews-heading bodyBlock-heading">Explore our channels</h2>
-                    </div>
-                    <div class="scroller scroller--channels-explorer">
-                        <a href="#" class="scroller-item">
-                            <article class="showcaseChannel" style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-plugged.jpg&signature=7702697239da7f47625866f9bd0b7cad)">
-                                <div class="showcaseChannel-logo">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/placeholder/media/plugged.svg" alt="plugged">
-                                </div>
-                                <h4 class="showcaseChannel-description">Your sardonic source for consumer tech stories</h4>
-                            </article>
-                        </a>
-                        <a href="#" class="scroller-item">
-                            <article class="showcaseChannel" style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-neural.jpg&signature=e2214820cceb78b748acdb3a73536e20)">
-                                <div class="showcaseChannel-logo">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/placeholder/media/neural.svg" alt="neural">
-                                </div>
-                                <h4 class="showcaseChannel-description">Human-centric AI news and analysis</h4>
-                            </article>
-                        </a>
-                        <a href="#" class="scroller-item">
-                            <article class="showcaseChannel" style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-shift.jpg&signature=7bd918d46dfac160834d7ccdde543fe9)">
-                                <div class="showcaseChannel-logo">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/placeholder/media/shift.svg" alt="shift">
-                                </div>
-                                <h4 class="showcaseChannel-description">Driving the future of sustainable mobility</h4>
-                            </article>
-                        </a>
-                        <a href="#" class="scroller-item">
-                            <article class="showcaseChannel" style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-growth-quarters.jpg&signature=3fffd5be376accdf91664a5906cebe68)">
-                                <div class="showcaseChannel-logo">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/placeholder/media/growth-quarters.svg" alt="growth">
-                                </div>
-                                <h4 class="showcaseChannel-description">No-nonsense perspectives on startup growth</h4>
-                            </article>
-                        </a>
-                        <a href="#" class="scroller-item">
-                            <article class="showcaseChannel" style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-hardfork.jpg&signature=6cf234f776f9a1fa060101f1d8d9866b)">
-                                <div class="showcaseChannel-logo">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/placeholder/media/hardfork.svg" alt="fork">
-                                </div>
-                                <h4 class="showcaseChannel-description">Inside money, markets, and Big Tech</h4>
-                            </article>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="divider-cta js-parallax c-bodyBlock next-newsletter-home">
-                <div class="annoucement-message flex flex-col">
-                    <form class="channel-ctaForm">
-                        <h2 class="channel-ctaHeading">Get the snarkiest newsletter in tech</h2>
-                        <p></p>
-                        <p>Subscribe to our twice-weekly <a href="#">Big Spam</a> or check out our <strong><a href="#">other newsletters.</a></strong></p>
-                        <p></p>
-                        <br>
-                        <div class="channel-ctaField">
-                            <input type="email" class="channel-ctaInput input input--borderless" placeholder="Email">
-                            <svg class="channel-ctaIcon" viewBox="0 0 16 16">
-                                <path d="M1.11621 4.2666a2.0026 2.0026 0 0 1-.583-.8833v-.7666A.47788.47788 0 0 1 .667 2.2749a.56688.56688 0 0 1 .3164-.1748 49.3662 49.3662 0 0 1 14.0166 0 .57417.57417 0 0 1 .333.1748.482.482 0 0 1 .13379.3418v.7666a2.0026 2.0026 0 0 1-.583.8833L9.2002 8.56689A1.88658 1.88658 0 0 1 8 8.93311a1.88658 1.88658 0 0 1-1.2002-.36622zM10.18359 10l5.28321-4.0498v7.4331a.48117.48117 0 0 1-.13379.3418.57141.57141 0 0 1-.333.1748 48.721 48.721 0 0 1-7 .5 49.29676 49.29676 0 0 1-7.0166-.5.564.564 0 0 1-.31641-.1748.47707.47707 0 0 1-.13379-.3418V5.9502L5.81641 10A3.5224 3.5224 0 0 0 8 10.6665 3.5224 3.5224 0 0 0 10.18359 10z"></path>
-                            </svg>
-                            <button class="channel-ctaSubmit">SUBSCRIBE</button>
+                                    <div class="flex-1 md:mt-m">
+                                        <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
+                                            <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">Here’s what Freakonomics gets wrong about advertising</span>
+                                        </h4>
+                                        <p class="text-xs text-copy-light pt-xs md:text-s">5 hours ago</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
+                                <a href="#" class="flex md:flex-col">
+                                    <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
+                                        <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
+                                            <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2Fbmw-i4-electric-car-future-ev-hans-zimmer.png&signature=65376367db09a13715300fd81178652a" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex-1 md:mt-m">
+                                        <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
+                                            <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">Thanks to Hans Zimmer, the BMW i4 EV will sound brilliant</span>
+                                        </h4>
+                                        <p class="text-xs text-copy-light pt-xs md:text-s">5 hours ago</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid-col md:grid-col--1/2 lg:grid-col--1/4">
+                                <a href="#" class="flex md:flex-col">
+                                    <div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none">
+                                        <div class="media media--1:1 rounded-full md:o-media--16:9 md:rounded-none">
+                                            <img src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FLite-Brite-hed.jpg&signature=9350113c1577f3d6b41f4a2f7bd837ae" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex-1 md:mt-m">
+                                        <h4 class="text-s leading-snug sm:text-m sm:leading-normal">
+                                            <span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">DNA arranged into tiny Lite-Brite style pegboards could help us store tons of data for centuries</span>
+                                        </h4>
+                                        <p class="text-xs text-copy-light pt-xs md:text-s">6 hours ago</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="bodyNews-buttons mt-xxl md:justify-center md:mt-2xl">
+                            <a href="#" class="button button--next button--rounded">all news</a>
                         </div>
-                    </form>
-                </div>
-                <br>
-                <div class="socials-message">
-                    <ul class="footer-contact">
-                        <li class="footer-contactItem">
-                            <a href="#" class="footer-contactLink">
-                                <svg class="footer-contactIcon">
-                                    <use xLink:href="assets/img/svg/icons.svg#facebook"></use>
-                                </svg>
+                    </div>
+                </section>
+                <section class="showcaseChannels bodyBlock c-bodyBlock">
+                    <div class="wrapper wrapper--wide overflow-hidden" style="overflow-x: hidden;">
+                        <div class="bodyNews-header m-none">
+                            <h2 class="bodyNews-heading bodyBlock-heading">Explore our channels</h2>
+                        </div>
+                        <div class="scroller scroller--channels-explorer">
+                            <a href="#" class="scroller-item">
+                                <article class="showcaseChannel" style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-plugged.jpg&signature=7702697239da7f47625866f9bd0b7cad)">
+                                    <div class="showcaseChannel-logo">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/placeholder/media/plugged.svg" alt="plugged">
+                                    </div>
+                                    <h4 class="showcaseChannel-description">Your sardonic source for consumer tech stories</h4>
+                                </article>
                             </a>
-                        </li>
-                        <li class="footer-contactItem">
-                            <a href="#" class="footer-contactLink">
-                                <svg class="footer-contactIcon">
-                                    <use xLink:href="assets/img/svg/icons.svg#instagram"></use>
-                                </svg>
+                            <a href="#" class="scroller-item">
+                                <article class="showcaseChannel" style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-neural.jpg&signature=e2214820cceb78b748acdb3a73536e20)">
+                                    <div class="showcaseChannel-logo">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/placeholder/media/neural.svg" alt="neural">
+                                    </div>
+                                    <h4 class="showcaseChannel-description">Human-centric AI news and analysis</h4>
+                                </article>
                             </a>
-                        </li>
-                        <li class="footer-contactItem">
-                            <a href="#" class="footer-contactLink">
-                                <svg class="footer-contactIcon">
-                                    <use xLink:href="assets/img/svg/icons.svg#twitter"></use>
-                                </svg>
+                            <a href="#" class="scroller-item">
+                                <article class="showcaseChannel" style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-shift.jpg&signature=7bd918d46dfac160834d7ccdde543fe9)">
+                                    <div class="showcaseChannel-logo">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/placeholder/media/shift.svg" alt="shift">
+                                    </div>
+                                    <h4 class="showcaseChannel-description">Driving the future of sustainable mobility</h4>
+                                </article>
                             </a>
-                        </li>
-                        <li class="footer-contactItem">
-                            <a href="#" class="footer-contactLink">
-                                <svg class="footer-contactIcon">
-                                    <use xLink:href="assets/img/svg/icons.svg#youtube"></use>
-                                </svg>
+                            <a href="#" class="scroller-item">
+                                <article class="showcaseChannel" style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-growth-quarters.jpg&signature=3fffd5be376accdf91664a5906cebe68)">
+                                    <div class="showcaseChannel-logo">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/placeholder/media/growth-quarters.svg" alt="growth">
+                                    </div>
+                                    <h4 class="showcaseChannel-description">No-nonsense perspectives on startup growth</h4>
+                                </article>
                             </a>
-                        </li>
-                        <li class="footer-contactItem">
-                            <a href="#" class="footer-contactLink">
-                                <svg class="footer-contactIcon">
-                                    <use xLink:href="assets/img/svg/icons.svg#flipboard"></use>
-                                </svg>
+                            <a href="#" class="scroller-item">
+                                <article class="showcaseChannel" style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-hardfork.jpg&signature=6cf234f776f9a1fa060101f1d8d9866b)">
+                                    <div class="showcaseChannel-logo">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/placeholder/media/hardfork.svg" alt="fork">
+                                    </div>
+                                    <h4 class="showcaseChannel-description">Inside money, markets, and Big Tech</h4>
+                                </article>
                             </a>
-                        </li>
-                        <li class="footer-contactItem">
-                            <a href="#" class="footer-contactLink">
-                                <svg class="footer-contactIcon">
-                                    <use xLink:href="assets/img/svg/icons.svg#mail"></use>
+                        </div>
+                    </div>
+                </section>
+                <section class="divider-cta js-parallax c-bodyBlock next-newsletter-home">
+                    <div class="annoucement-message flex flex-col">
+                        <form class="channel-ctaForm">
+                            <h2 class="channel-ctaHeading">Get the snarkiest newsletter in tech</h2>
+                            <p></p>
+                            <p>Subscribe to our twice-weekly <a href="#">Big Spam</a> or check out our <strong><a href="#">other newsletters.</a></strong></p>
+                            <p></p>
+                            <br>
+                            <div class="channel-ctaField">
+                                <input type="email" class="channel-ctaInput input input--borderless" placeholder="Email">
+                                <svg class="channel-ctaIcon" viewBox="0 0 16 16">
+                                    <path d="M1.11621 4.2666a2.0026 2.0026 0 0 1-.583-.8833v-.7666A.47788.47788 0 0 1 .667 2.2749a.56688.56688 0 0 1 .3164-.1748 49.3662 49.3662 0 0 1 14.0166 0 .57417.57417 0 0 1 .333.1748.482.482 0 0 1 .13379.3418v.7666a2.0026 2.0026 0 0 1-.583.8833L9.2002 8.56689A1.88658 1.88658 0 0 1 8 8.93311a1.88658 1.88658 0 0 1-1.2002-.36622zM10.18359 10l5.28321-4.0498v7.4331a.48117.48117 0 0 1-.13379.3418.57141.57141 0 0 1-.333.1748 48.721 48.721 0 0 1-7 .5 49.29676 49.29676 0 0 1-7.0166-.5.564.564 0 0 1-.31641-.1748.47707.47707 0 0 1-.13379-.3418V5.9502L5.81641 10A3.5224 3.5224 0 0 0 8 10.6665 3.5224 3.5224 0 0 0 10.18359 10z"></path>
                                 </svg>
-                            </a>
-                        </li>
-                        <li class="footer-contactItem">
-                            <a href="#" class="footer-contactLink">
-                                <svg class="footer-contactIcon">
-                                    <use xLink:href="assets/img/svg/icons.svg#linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="showcase showcaseVideo  c-bodyBlock bodyBlock">
-                <div class="wrapper">
-                    <h2 class="showcaseVideo-heading bodyBlock-heading">Watch what we made you</h2>
-                    <div class="showcaseVideo-container">
-                        <div class="showcaseVideo-mainStage">
-                            <div class="media media--16:9">
-                                <iframe id="c-videoStage" class="youtube-player" type="text/html" name="TNW Next Videostage" title="TNW Next Videostage" src="https://youtube.com/embed/UAu4d0K99Vc" frameborder="0" poster="https://i.ytimg.com/vi/0OXyJygPSRI/hqdefault.jpg" autoplay="autoplay"><div><img class="youtube-thumb" src="//i.ytimg.com/vi/undefined/hqdefault.jpg"><div class="play-button"></div></div></iframe>
+                                <button class="channel-ctaSubmit">SUBSCRIBE</button>
                             </div>
-                            <header class="showcaseVideo-mainStageHeader">
-                                <div class="flex-grow">
-                                    <h3 class="showcaseVideo-mainStageHeading">Sonos Roam review: Smart speaker, smarter business</h3>
-                                    <span class="showcaseVideo-mainStageMeta">May 6, 2021</span>
-                                </div>
-                            </header>
-                        </div>
-                        <div class="showcaseVideo-playlist">
-                            <div class="showcaseVideo-scroller">
-                                <a href="#" class="showcaseVideo-playlistItem">
-                                    <div class="media media--16:9">
-                                        <img src="https://i.ytimg.com/vi/UAu4d0K99Vc/hqdefault.jpg" alt="Sonos Roam review: Smart speaker, smarter business">
-                                    </div>
-                                    <div class="showcaseVideo-playlistItemTitle">
-                                        <span>Sonos Roam review: Smart speaker, smarter business</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="showcaseVideo-playlistItem">
-                                    <div class="media media--16:9">
-                                        <img src="https://i.ytimg.com/vi/0OXyJygPSRI/hqdefault.jpg" alt="Learning guitar is better than meditation">
-                                    </div>
-                                    <div class="showcaseVideo-playlistItemTitle">
-                                        <span>Sonos Roam review: Smart speaker, smarter business</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="showcaseVideo-playlistItem">
-                                    <div class="media media--16:9">
-                                        <img src="https://i.ytimg.com/vi/FAx1wjv2jEE/hqdefault.jpg" alt="Sonos Roam review: Smart speaker, smarter business">
-                                    </div>
-                                    <div class="showcaseVideo-playlistItemTitle">
-                                        <span>Sonos Roam review: Smart speaker, smarter business</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="showcaseVideo-playlistItem">
-                                    <div class="media media--16:9">
-                                        <img src="https://i.ytimg.com/vi/jAIdYernX0w/hqdefault.jpg" alt="Sonos Roam review: Smart speaker, smarter business">
-                                    </div>
-                                    <div class="showcaseVideo-playlistItemTitle">
-                                        <span>Sonos Roam review: Smart speaker, smarter business</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="showcaseVideo-playlistItem">
-                                    <div class="media media--16:9">
-                                        <img src="https://i.ytimg.com/vi/lRUewuKBzRg/hqdefault.jpg" alt="Sonos Roam review: Smart speaker, smarter business">
-                                    </div>
-                                    <div class="showcaseVideo-playlistItemTitle">
-                                        <span>Sonos Roam review: Smart speaker, smarter business</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="showcaseVideo-playlistItem">
-                                    <div class="media media--16:9">
-                                        <img src="https://i.ytimg.com/vi/l8HkCEHr-FQ/hqdefault.jpg" alt="Sonos Roam review: Smart speaker, smarter business">
-                                    </div>
-                                    <div class="showcaseVideo-playlistItemTitle">
-                                        <span>Sonos Roam review: Smart speaker, smarter business</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="showcaseVideo-playlistItem">
-                                    <div class="media media--16:9">
-                                        <img src="https://i.ytimg.com/vi/FoqkI_Y4CYU/hqdefault.jpg" alt="Sonos Roam review: Smart speaker, smarter business">
-                                    </div>
-                                    <div class="showcaseVideo-playlistItemTitle">
-                                        <span>Sonos Roam review: Smart speaker, smarter business</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="showcaseVideo-scrollerFade"></div>
-                        </div>
+                        </form>
                     </div>
-                </div>
-            </section>
-            <section class="showcase showcasePartner c-bodyBlock">
-                <div class="wrapper">
-                    <div class="grid md:grid--gap-m lg:grid--gap-l">
-                        <div class="grid-col md:grid-col--1/2 mb-xl text-center md:mb-none md:text-left">
-                            <header class="md:sectionHeader--left mb-xl md:mb-none md:pr-l">
-                                <h6 class="c-bodyBlock-subheading">REACH YOUR GOALS</h6>
-                                <h2 class="bodyNews-heading bodyBlock-heading" style="margin-bottom: 1rem !important;">Work with us</h2>
-                                <p class="sectionHeader-intro mb-xl">TNW takes center stage in the tech industry, offering creative media campaigns, sizzling tech events, bespoke innovation programs, and prime office locations in Amsterdam. Want to engage your audience more effectively, innovate your business, and position your brand in front of a digital-savvy audience?</p>
-                                <a class="button button-primary hstrigger">GET IN TOUCH</a>
-                            </header>
-                        </div>
-                        <div class="grid-col md:grid-col--1/2 md:flex md:items-center">
-                            <div class="grid grid--gap-l grid--gap-xl">
-                                <div class="grid-col grid-col--1/2 flex flex-col lg:flex-row lg:items-center">
-                                    <div class="mx-auto w-5xl md:w-6xl lg:m-none">
-                                        <div class="partner-custom media media--1:1">
-                                            <img src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-media.svg" alt="media">
-                                        </div>
-                                    </div>
-                                    <h4 class="mt-m text-center text-m lg:text-l lg:mt-none lg:ml-m">Media</h4>
-                                </div>
-                                <div class="grid-col grid-col--1/2 flex flex-col lg:flex-row lg:items-center">
-                                    <div class="mx-auto w-5xl md:w-6xl lg:m-none">
-                                        <div class="media media--1:1">
-                                            <img src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-events.svg" alt="events">
-                                        </div>
-                                    </div>
-                                    <h4 class="mt-m text-center text-m lg:text-l lg:mt-none lg:ml-m">Events</h4>
-                                </div>
-                                <div class="grid-col grid-col--1/2 flex flex-col lg:flex-row lg:items-center">
-                                    <div class="mx-auto w-5xl md:w-6xl lg:m-none">
-                                        <div class="media media--1:1">
-                                            <img src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-spaces.svg" alt="spaces">
-                                        </div>
-                                    </div>
-                                    <h4 class="mt-m text-center text-m lg:text-l lg:mt-none lg:ml-m">Spaces</h4>
-                                </div>
-                                <div class="grid-col grid-col--1/2 flex flex-col lg:flex-row lg:items-center">
-                                    <div class="mx-auto w-5xl md:w-6xl lg:m-none">
-                                        <div class="media media--1:1">
-                                            <img src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-programs.svg" alt="programs">
-                                        </div>
-                                    </div>
-                                    <h4 class="mt-m text-center text-m lg:text-l lg:mt-none lg:ml-m">Programs</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrapper mt-xl md:mt-3xl lg:mt-3xl lg:mb-xl">
-                        <ul class="grid grid--centered grid--gap-s justify-center">
-                            <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
-                                <a href="#" class="showcasePartner-link media media--16:9">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/partners/google.svg" alt="google">
+                    <br>
+                    <div class="socials-message">
+                        <ul class="footer-contact">
+                            <li class="footer-contactItem">
+                                <a href="#" class="footer-contactLink">
+                                    <svg class="footer-contactIcon">
+                                        <use xLink:href="assets/img/svg/icons.svg#facebook"></use>
+                                    </svg>
                                 </a>
                             </li>
-                            <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
-                                <a href="#" class="showcasePartner-link media media--16:9">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/partners/etoro.svg" alt="etoro">
+                            <li class="footer-contactItem">
+                                <a href="#" class="footer-contactLink">
+                                    <svg class="footer-contactIcon">
+                                        <use xLink:href="assets/img/svg/icons.svg#instagram"></use>
+                                    </svg>
                                 </a>
                             </li>
-                            <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
-                                <a href="#" class="showcasePartner-link media media--16:9">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/partners/ibm.svg" alt="IBM">
+                            <li class="footer-contactItem">
+                                <a href="#" class="footer-contactLink">
+                                    <svg class="footer-contactIcon">
+                                        <use xLink:href="assets/img/svg/icons.svg#twitter"></use>
+                                    </svg>
                                 </a>
                             </li>
-                            <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
-                                <a href="#" class="showcasePartner-link media media--16:9">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/partners/microsoft.svg" alt="microsoft">
+                            <li class="footer-contactItem">
+                                <a href="#" class="footer-contactLink">
+                                    <svg class="footer-contactIcon">
+                                        <use xLink:href="assets/img/svg/icons.svg#youtube"></use>
+                                    </svg>
                                 </a>
                             </li>
-                            <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
-                                <a href="#" class="showcasePartner-link media media--16:9">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/partners/paypal.svg" alt="paypal">
+                            <li class="footer-contactItem">
+                                <a href="#" class="footer-contactLink">
+                                    <svg class="footer-contactIcon">
+                                        <use xLink:href="assets/img/svg/icons.svg#flipboard"></use>
+                                    </svg>
                                 </a>
                             </li>
-                            <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
-                                <a href="#" class="showcasePartner-link media media--16:9">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/partners/vodafone.svg" alt="vodafone">
+                            <li class="footer-contactItem">
+                                <a href="#" class="footer-contactLink">
+                                    <svg class="footer-contactIcon">
+                                        <use xLink:href="assets/img/svg/icons.svg#mail"></use>
+                                    </svg>
                                 </a>
                             </li>
-                            <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
-                                <a href="#" class="showcasePartner-link media media--16:9">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/partners/accenture.svg" alt="accenture">
-                                </a>
-                            </li>
-                            <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
-                                <a href="#" class="showcasePartner-link media media--16:9">
-                                    <img src="https://next.tnwcdn.com/assets/next/img/partners/mckinsey-company.svg" alt="mckinsey company">
+                            <li class="footer-contactItem">
+                                <a href="#" class="footer-contactLink">
+                                    <svg class="footer-contactIcon">
+                                        <use xLink:href="assets/img/svg/icons.svg#linkedin"></use>
+                                    </svg>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </section>
+                </section>
+                <section class="showcase showcaseVideo  c-bodyBlock bodyBlock">
+                    <div class="wrapper">
+                        <h2 class="showcaseVideo-heading bodyBlock-heading">Watch what we made you</h2>
+                        <div class="showcaseVideo-container">
+                            <div class="showcaseVideo-mainStage">
+                                <div class="media media--16:9">
+                                    <iframe id="c-videoStage" class="youtube-player" type="text/html" name="TNW Next Videostage" title="TNW Next Videostage" src="https://youtube.com/embed/UAu4d0K99Vc" frameborder="0" poster="https://i.ytimg.com/vi/0OXyJygPSRI/hqdefault.jpg" autoplay="autoplay"><div><img class="youtube-thumb" src="//i.ytimg.com/vi/undefined/hqdefault.jpg"><div class="play-button"></div></div></iframe>
+                                </div>
+                                <header class="showcaseVideo-mainStageHeader">
+                                    <div class="flex-grow">
+                                        <h3 class="showcaseVideo-mainStageHeading">Sonos Roam review: Smart speaker, smarter business</h3>
+                                        <span class="showcaseVideo-mainStageMeta">May 6, 2021</span>
+                                    </div>
+                                </header>
+                            </div>
+                            <div class="showcaseVideo-playlist">
+                                <div class="showcaseVideo-scroller">
+                                    <a href="#" class="showcaseVideo-playlistItem">
+                                        <div class="media media--16:9">
+                                            <img src="https://i.ytimg.com/vi/UAu4d0K99Vc/hqdefault.jpg" alt="Sonos Roam review: Smart speaker, smarter business">
+                                        </div>
+                                        <div class="showcaseVideo-playlistItemTitle">
+                                            <span>Sonos Roam review: Smart speaker, smarter business</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="showcaseVideo-playlistItem">
+                                        <div class="media media--16:9">
+                                            <img src="https://i.ytimg.com/vi/0OXyJygPSRI/hqdefault.jpg" alt="Learning guitar is better than meditation">
+                                        </div>
+                                        <div class="showcaseVideo-playlistItemTitle">
+                                            <span>Sonos Roam review: Smart speaker, smarter business</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="showcaseVideo-playlistItem">
+                                        <div class="media media--16:9">
+                                            <img src="https://i.ytimg.com/vi/FAx1wjv2jEE/hqdefault.jpg" alt="Sonos Roam review: Smart speaker, smarter business">
+                                        </div>
+                                        <div class="showcaseVideo-playlistItemTitle">
+                                            <span>Sonos Roam review: Smart speaker, smarter business</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="showcaseVideo-playlistItem">
+                                        <div class="media media--16:9">
+                                            <img src="https://i.ytimg.com/vi/jAIdYernX0w/hqdefault.jpg" alt="Sonos Roam review: Smart speaker, smarter business">
+                                        </div>
+                                        <div class="showcaseVideo-playlistItemTitle">
+                                            <span>Sonos Roam review: Smart speaker, smarter business</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="showcaseVideo-playlistItem">
+                                        <div class="media media--16:9">
+                                            <img src="https://i.ytimg.com/vi/lRUewuKBzRg/hqdefault.jpg" alt="Sonos Roam review: Smart speaker, smarter business">
+                                        </div>
+                                        <div class="showcaseVideo-playlistItemTitle">
+                                            <span>Sonos Roam review: Smart speaker, smarter business</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="showcaseVideo-playlistItem">
+                                        <div class="media media--16:9">
+                                            <img src="https://i.ytimg.com/vi/l8HkCEHr-FQ/hqdefault.jpg" alt="Sonos Roam review: Smart speaker, smarter business">
+                                        </div>
+                                        <div class="showcaseVideo-playlistItemTitle">
+                                            <span>Sonos Roam review: Smart speaker, smarter business</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="showcaseVideo-playlistItem">
+                                        <div class="media media--16:9">
+                                            <img src="https://i.ytimg.com/vi/FoqkI_Y4CYU/hqdefault.jpg" alt="Sonos Roam review: Smart speaker, smarter business">
+                                        </div>
+                                        <div class="showcaseVideo-playlistItemTitle">
+                                            <span>Sonos Roam review: Smart speaker, smarter business</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="showcaseVideo-scrollerFade"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="showcase showcasePartner c-bodyBlock">
+                    <div class="wrapper">
+                        <div class="grid md:grid--gap-m lg:grid--gap-l">
+                            <div class="grid-col md:grid-col--1/2 mb-xl text-center md:mb-none md:text-left">
+                                <header class="md:sectionHeader--left mb-xl md:mb-none md:pr-l">
+                                    <h6 class="c-bodyBlock-subheading">REACH YOUR GOALS</h6>
+                                    <h2 class="bodyNews-heading bodyBlock-heading" style="margin-bottom: 1rem !important;">Work with us</h2>
+                                    <p class="sectionHeader-intro mb-xl">TNW takes center stage in the tech industry, offering creative media campaigns, sizzling tech events, bespoke innovation programs, and prime office locations in Amsterdam. Want to engage your audience more effectively, innovate your business, and position your brand in front of a digital-savvy audience?</p>
+                                    <a class="button button-primary hstrigger">GET IN TOUCH</a>
+                                </header>
+                            </div>
+                            <div class="grid-col md:grid-col--1/2 md:flex md:items-center">
+                                <div class="grid grid--gap-l grid--gap-xl">
+                                    <div class="grid-col grid-col--1/2 flex flex-col lg:flex-row lg:items-center">
+                                        <div class="mx-auto w-5xl md:w-6xl lg:m-none">
+                                            <div class="partner-custom media media--1:1">
+                                                <img src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-media.svg" alt="media">
+                                            </div>
+                                        </div>
+                                        <h4 class="mt-m text-center text-m lg:text-l lg:mt-none lg:ml-m">Media</h4>
+                                    </div>
+                                    <div class="grid-col grid-col--1/2 flex flex-col lg:flex-row lg:items-center">
+                                        <div class="mx-auto w-5xl md:w-6xl lg:m-none">
+                                            <div class="media media--1:1">
+                                                <img src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-events.svg" alt="events">
+                                            </div>
+                                        </div>
+                                        <h4 class="mt-m text-center text-m lg:text-l lg:mt-none lg:ml-m">Events</h4>
+                                    </div>
+                                    <div class="grid-col grid-col--1/2 flex flex-col lg:flex-row lg:items-center">
+                                        <div class="mx-auto w-5xl md:w-6xl lg:m-none">
+                                            <div class="media media--1:1">
+                                                <img src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-spaces.svg" alt="spaces">
+                                            </div>
+                                        </div>
+                                        <h4 class="mt-m text-center text-m lg:text-l lg:mt-none lg:ml-m">Spaces</h4>
+                                    </div>
+                                    <div class="grid-col grid-col--1/2 flex flex-col lg:flex-row lg:items-center">
+                                        <div class="mx-auto w-5xl md:w-6xl lg:m-none">
+                                            <div class="media media--1:1">
+                                                <img src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-programs.svg" alt="programs">
+                                            </div>
+                                        </div>
+                                        <h4 class="mt-m text-center text-m lg:text-l lg:mt-none lg:ml-m">Programs</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper mt-xl md:mt-3xl lg:mt-3xl lg:mb-xl">
+                            <ul class="grid grid--centered grid--gap-s justify-center">
+                                <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
+                                    <a href="#" class="showcasePartner-link media media--16:9">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/partners/google.svg" alt="google">
+                                    </a>
+                                </li>
+                                <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
+                                    <a href="#" class="showcasePartner-link media media--16:9">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/partners/etoro.svg" alt="etoro">
+                                    </a>
+                                </li>
+                                <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
+                                    <a href="#" class="showcasePartner-link media media--16:9">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/partners/ibm.svg" alt="IBM">
+                                    </a>
+                                </li>
+                                <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
+                                    <a href="#" class="showcasePartner-link media media--16:9">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/partners/microsoft.svg" alt="microsoft">
+                                    </a>
+                                </li>
+                                <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
+                                    <a href="#" class="showcasePartner-link media media--16:9">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/partners/paypal.svg" alt="paypal">
+                                    </a>
+                                </li>
+                                <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
+                                    <a href="#" class="showcasePartner-link media media--16:9">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/partners/vodafone.svg" alt="vodafone">
+                                    </a>
+                                </li>
+                                <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
+                                    <a href="#" class="showcasePartner-link media media--16:9">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/partners/accenture.svg" alt="accenture">
+                                    </a>
+                                </li>
+                                <li class="grid-col grid-col--1/2 md:grid-col--1/3 lg:grid-col--1/8">
+                                    <a href="#" class="showcasePartner-link media media--16:9">
+                                        <img src="https://next.tnwcdn.com/assets/next/img/partners/mckinsey-company.svg" alt="mckinsey company">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
     <footer class="c-footer">

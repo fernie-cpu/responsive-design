@@ -110,6 +110,27 @@ img, svg {
     box-shadow: 0 0 48px rgba(0, 0, 0, .15);
 }
 
+.nav-levelLabel {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 1.5rem 1.5rem;
+}
+
+.nav-levelLabel--1 {
+    background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGQ9J00zIDNoNHY0SDN6bTE0IDBoNHY0aC00em0tNyAwaDR2NGgtNHptLTcgN2g0djRIM3ptMTQgMGg0djRoLTR6bS03IDBoNHY0aC00em0tNyA3aDR2NEgzem0xNCAwaDR2NGgtNHptLTcgMGg0djRoLTR6JyBmaWxsPScjQTdBQUIyJy8+PC9zdmc+);
+    left: 0;
+}
+
+.logo {
+    display: none;
+}
+
 .logo a.logo-link {
     position: absolute;
 }
@@ -139,6 +160,10 @@ img, svg {
 
 .logo-link svg:hover path {
     fill: #c09;
+}
+
+.nav-menuItem:first-child {
+    display: block !important;
 }
 
 .nav-menuItem:not(.has-grid, .has-menu) .nav-menuLink {
@@ -409,6 +434,11 @@ img, svg {
     padding: 2rem 0;
 }
 
+.showcase.advert {
+    display: block;
+    padding-bottom: 0;
+}
+
 .nextHomeHeaderGrid.homeLead {
     padding: 2em 0 0;
     margin: 0;
@@ -674,6 +704,52 @@ h1.card-heading, h2, h3.card-heading {
 .nextHomeHeaderGrid .showcase-article .button.adpanel {
     margin-top: 1em;
     box-shadow: inset 0 0 0 1px #fff;
+}
+
+.card-header.smallAdvertPane > .button.adpanel {
+    margin-top: 1em;
+    box-shadow: inset 0 0 0 1px #fff;
+    color: #fff;
+}
+
+.card-header.smallAdvertPane > .card-heading.adpanel {
+    color: #fff;
+}
+
+.card--dark .card-header,
+.card--visual .card-header {
+    background: transparent;
+    color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.showcase.advert > .showcase-article {
+    height: 250px;
+    margin: -4.75em 8px 0;
+    padding: 16px 0;
+}
+
+.card-header.smallAdvertPane {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10%;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.parallax-content {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-position: bottom;
+    background-size: cover;
+    object-fit: cover;
 }
 
 .br {
@@ -1346,6 +1422,37 @@ h1.card-heading, h2, h3.card-heading {
     color: #c09;
 }
 
+.nav-2 {
+    position: relative;
+}
+
+.nav-menuToggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: -9999px;
+    left: -9999px;
+}
+
+.nav-pwd {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.nav-pwdLogo {
+    display: block;
+    width: 4.125rem;
+}
+
+.nav-pwdLogo svg {
+    height: 1rem;
+    color: rgba(167, 170, 178, var(--text-opacity));
+    fill: currentColor;
+    transition: fill .25s;
+    width: 4.125rem;
+}
+
 @-webkit-keyframes navMenuLinkTail {
     0% {transform:translateY(0)}
     to {transform:translateY(-6px)}
@@ -1394,6 +1501,46 @@ h1.card-heading, h2, h3.card-heading {
 @keyframes navSubmenu {
     0% {transform:translateY(-8px)}
     to {transform:translateY(0)}
+}
+
+@-webkit-keyframes navIconPop {
+    0%, to {transform: scale(1)}
+    25% {transform: scale(1.5)}
+}
+
+@keyframes navIconPop {
+    0%, to {transform: scale(1)}
+    25% {transform: scale(1.5)}
+}
+
+@-webkit-keyframes navSubmenuMobile{
+    0% {--bg-opacity: 1;
+        background-color: #000;
+        background-color: rgba(0,0,0,var(--bg-opacity))}
+    to {--bg-opacity: 1;
+        background-color: #1c1e24;
+        background-color: rgba(28,30,36,var(--bg-opacity))}
+}
+
+@keyframes navSubmenuMobile{
+    0% {--bg-opacity: 1;
+        background-color: #000;
+        background-color: rgba(0,0,0,var(--bg-opacity))}
+    to {--bg-opacity: 1;
+        background-color: #1c1e24;
+        background-color: rgba(28,30,36,var(--bg-opacity))}
+}
+
+@-webkit-keyframes navGridContent {
+    0% {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .text-center {

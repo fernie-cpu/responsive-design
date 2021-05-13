@@ -2,15 +2,30 @@
     --bg-opacity: 1;
     --text-opacity: 1;
     --border-opacity: 0.5;
+    --transform-translate-x: 0;
+    --transform-translate-y: 0;
+    --transform-rotate: 0;
+    --transform-skew-x: 0;
+    --transform-skew-y: 0;
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
 }
 
 @media (min-width: 320px) {
+    body::after {
+        content: "xs";
+    }
+
     nextHomeHeaderGrid .showcase-article:nth-child(3) {
         display: none;
     }
 }
 
 @media (min-width: 375px) {
+    body::after {
+        content: "sm";
+    }
+    
     .nav-socialItem {
         margin-left: .5rem;
         margin-right: .5rem;
@@ -53,6 +68,30 @@
 
     .bodyNews-buttons .button {
         flex: 1 1 0%;
+    }
+
+    .showcase-scroller {
+        display: flex;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: -.5rem 0 1.5rem -1.5rem;
+        width: 100vw;
+        padding-bottom: .25rem;
+        -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    }
+
+    .showcase-scroller .showcase-article {
+        border: 8px solid transparent;
+        flex: 0 0 85vw;
+        scroll-snap-align: center;
+    }
+
+    .nextHomeHeaderGrid .card-header {
+        padding: 16px;
+    }
+    .showcase-scroller .showcase-article:not(:first-child) {
+        margin-left: -.5rem;
     }
 }
 
@@ -124,13 +163,6 @@
     }
 
     .parallax-layer {
-        --transform-translate-x: 0;
-        --transform-translate-y: 0;
-        --transform-rotate: 0;
-        --transform-skew-x: 0;
-        --transform-skew-y: 0;
-        --transform-scale-x: 1;
-        --transform-scale-y: 1;
         transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y))
                    rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y))
                    scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
@@ -170,6 +202,11 @@
 
     .showcaseTrending {
         padding: 3em 0;
+    }
+
+    .card-header.smallAdvertPane > .card-heading.adpanel {
+        text-align: center;
+        font-size: 1.5rem;
     }
 
     .bodyBlock {
@@ -344,6 +381,90 @@
     .more {
         padding-left: 0;
     }
+
+    .card-header.smallAdvertPane {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px)  {
+    .main-nav {
+        position: fixed;
+        top: 0 !important;
+    }
+
+    .nav-pwd {
+        display: flex;
+        align-items: center;
+        z-index: 80;
+        padding-left: 3rem;
+        height: 3.5rem;
+    }
+
+    .nav-menuContainer {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index: 70;
+        top: 3.5rem;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        background-color: #000;
+        background-color: rgba(0, 0, 0, var(--bg-opacity));
+        border-top: 1px solid rgba(28, 30, 36, var(--border-opacity));
+        box-shadow: 0 -56px 0 #000;
+        transition: .25s ease-out;
+    }
+
+    .nav-menuContainer--1 {
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+    .nav-menuContainer--2 {
+        left: auto;
+        right: 0;
+        transform: translateX(100%);
+    }
+
+    .nav-menuToggle ~ .nav-levelLabel {
+        -webkit-animation: navIconPop .15s ease-out both;
+        animation: navIconPop .15s ease-out both;
+        background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PScwIDAgMjQgMjQnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZmlsbD0nI0ZGRicgZD0nTTE5Ljc3OCA1LjYzNmwtMS40MTQtMS40MTRMMTIgMTAuNTg2IDUuNjM2IDQuMjIyIDQuMjIyIDUuNjM2IDEwLjU4NiAxMmwtNi4zNjQgNi4zNjQgMS40MTQgMS40MTRMMTIgMTMuNDE0bDYuMzY0IDYuMzY0IDEuNDE0LTEuNDE0TDEzLjQxNCAxMmw2LjM2NC02LjM2NHonLz48L3N2Zz4=);
+    }
+
+    .nav-menuToggle:checked ~ .nav-menuContainer {
+        transform: translateX(0);
+    }
+
+    .nav-menuContainer .nav-menu {
+        flex: 1 1 0%;
+        -webkit-overflow-scrolling: touch;
+        overflow: auto;
+    }
+
+    .nav-menuItem:not(:first-child) {
+        color: #505666;
+        border-top: 1px solid rgba(80, 86, 102, var(--border-opacity));
+        --border-opacity: .35;
+    }
+
+    .nav-menuLink {
+        font-size: 1.5rem;
+        transition: .25s ease-out;
+    }
+
+    .nav-grid {
+        -webkit-animation: navSubmenuMobile .25s ease-out both;
+        animation: navSubmenuMobile .25s ease-out both;
+        display: none;
+    }
+
+    .card-imageImage {
+        width: 125%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -374,6 +495,28 @@
 
     .nav-menuContainer {
         z-index: 100;
+    }
+
+    .nav-pwd {
+        position: absolute;
+        top: 0;
+        left: 1.5rem;
+        width: calc(100% - 1.5rem);
+    }
+
+    .nav-pwdLogo {
+        position: relative;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        top: .5rem;
+        width: 4.8125rem;
+        padding-right: .6875rem;
+        transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y))
+                   rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y))
+                   scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+        transition-duration: .2s;
+        transition-timing-function: cubic-bezier(0, 0, .2, 1);
+        opacity: 0;
     }
 
     .logo-link {
