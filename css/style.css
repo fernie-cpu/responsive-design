@@ -184,6 +184,16 @@ img, svg {
     display: block !important;
 }
 
+.nav-menuLabel {
+    display: block;
+    position: absolute;
+    z-index: 30;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .nav-menuItem:hover .nav-menuLink {
     color: #fff;
     color: rgba(255, 255, 255, var(--text-opacity));
@@ -232,7 +242,7 @@ img, svg {
 }
 
 .navGrid-group {
-    padding: 5rem 1.5rem 0;
+    padding: .5rem 1.5rem 0;
 }
 
 .navGrid-group h6 {
@@ -1532,6 +1542,18 @@ h1.card-heading, h2, h3.card-heading {
 }
 
 @-webkit-keyframes navGridContent {
+    0% {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes navSubmenuItemMobile {
     0% {
         opacity: 0;
         transform: translateY(-12px);

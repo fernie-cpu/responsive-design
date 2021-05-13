@@ -12,20 +12,12 @@
 }
 
 @media (min-width: 320px) {
-    body::after {
-        content: "xs";
-    }
-
-    nextHomeHeaderGrid .showcase-article:nth-child(3) {
+    .nextHomeHeaderGrid .showcase-article:nth-child(3) {
         display: none;
     }
 }
 
-@media (min-width: 375px) {
-    body::after {
-        content: "sm";
-    }
-    
+@media (min-width: 375px) {  
     .nav-socialItem {
         margin-left: .5rem;
         margin-right: .5rem;
@@ -443,6 +435,20 @@
         transform: translateX(0);
     }
 
+    .nav-menuToggle:checked ~ .nav-menuLink {
+        background-color: rgba(28, 30, 36, var(--bg-opacity));
+        color: rgba(255, 255, 255, var(--text-opacity));
+    }
+
+    .nav-menuToggle:checked ~ .nav-menuLink::after {
+        transform: rotate(180deg);
+    }
+
+    .nav-menuToggle:checked ~ .nav-grid,
+    .nav-menuToggle:checked ~ .nav-submenu {
+        display: block;
+    }
+
     .nav-menuContainer .nav-menu {
         flex: 1 1 0%;
         -webkit-overflow-scrolling: touch;
@@ -468,6 +474,31 @@
 
     .card-imageImage {
         width: 125%;
+    }
+
+    .navGrid-row {
+        flex-wrap: wrap;
+    }
+
+    .nav-submenu {
+        -webkit-animation: navSubmenuMobile .25s ease-out both;
+        animation: navSubmenuMobile .25s ease-out both;
+        padding-bottom: .5rem;
+    }
+
+    .nav-submenuItem {
+        animation: navSubmenuItemMobile .25s ease-out both;
+    }
+
+    .nav-submenuLink::before {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        height: .75rem;
+        width: .75rem;
+        border-radius: 50%;
+        background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PScwIDAgMTIgMTInIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZmlsbD0nbm9uZScgZD0nTTMuNS41TDkgNmwtNS41IDUuNScgc3Ryb2tlPScjQTdBQUIyJy8+PC9zdmc+);
+        content: "";
     }
 }
 
